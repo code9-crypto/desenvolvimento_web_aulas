@@ -1,0 +1,83 @@
+/*Formatações gerais*/
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background: #F6F6F6;
+	font-family: sans-serif;
+}
+ /*Formatações da tela de login*/
+#container-principal{
+	width: 100%;
+	margin: 0 auto;
+	min-width: 780px;
+	max-width: 1180px;
+	border: ;
+}
+
+#topo{
+	text-align: center;
+}
+
+#area-login{
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+#login{
+	margin: 0 auto;
+	width: 50%;
+	text-align: center;
+	margin-top: 50px;
+}
+
+#login .login{
+	width: 50%;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	padding: 8px;
+	border-radius: 15px;
+	font-size: 18px;
+	background-image: url('../imagens/icone-usuario.png');
+	background-position: 15px;
+	background-repeat: no-repeat;
+	padding-left: 40px;
+	height: 40px;
+}
+
+#login .senha{
+	width: 50%;
+	margin-bottom: 10px;
+	padding: 8px;
+	border-radius: 15px;
+	font-size: 18px;
+	background-image: url('../imagens/icone-cadeado.png');
+	background-position: 15px;
+	background-repeat: no-repeat;
+	padding-left: 40px;
+	height: 40px;
+}
+
+#login .enviar{
+	width: 53.5%;
+	margin-bottom: 10px;
+	padding: 8px;
+	text-transform: uppercase;
+	line-height: 20px;
+	border-radius: 15px;
+	font-size: 18px;
+}
+
+#login .enviar:hover{
+	cursor: pointer;
+	background-color: grey;
+	color: white;
+}
+
+h3{
+	text-transform: uppercase;
+}
+
+

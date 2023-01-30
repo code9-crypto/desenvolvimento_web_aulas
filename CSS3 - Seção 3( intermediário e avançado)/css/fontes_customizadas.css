@@ -1,0 +1,30 @@
+@font-face{
+	font-family: Ancestral;
+	src: url('../fontes/Ancient-Medium.woff');
+}
+
+@font-face{
+	font-family: coracao;
+	src: url('../fontes/BringHeart.woff');
+}
+
+@font-face{
+	font-family: madelina;
+	src: url('../fontes/MadelinaScript.woff');
+}
+
+h1{
+	text-transform: uppercase;
+	font-family: Ancestral;
+	font-size: 6em;	
+}
+
+h2{
+	text-transform: uppercase;
+	font-family: coracao;
+}
+
+h3{
+	text-transform: uppercase;
+	font-family: madelina;
+}

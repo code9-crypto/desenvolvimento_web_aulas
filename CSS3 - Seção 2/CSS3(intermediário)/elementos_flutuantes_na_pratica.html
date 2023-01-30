@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+		<title>Elementos flutuantes na prática</title>
+		<style type="text/css">
+
+			body{
+				background: #f4f4f4;
+			}
+			
+			#principal{
+				width: 920px;
+				padding-left: 300px;
+			}
+
+			.noticia{
+				background: #e5e5e5;
+				padding: 5px;
+				width: 280px;
+				margin: 7px;
+				float: left;
+			}
+
+			a{
+				text-decoration: none;
+				font-family: sans-serif;
+				font-weight: bold;
+				color: blue;
+			}
+
+			.clear{
+				clear: both;
+			}
+
+			.imagem-galeria{
+				background: white;
+				width: 265px;
+				padding: 5px;
+				float: left;
+				margin: 15px;
+				position: relative;
+				left: 5px;
+			}
+
+			h2{
+				text-align: center;
+				text-decoration: underline;
+			}
+
+			.menu-lateral{
+				border: 5px solid black;
+				position: fixed;
+				left: 1250px;
+				top: 210px;
+				padding-left: 50px; 
+				padding-right: 50px;
+			}
+
+		</style>
+
+	</head>
+	<body>
+		
+		<div class="menu-lateral"><!-- inicio do menu lateral -->
+				
+			<h3>MENU</h3>
+			<p><a href="">Home</a></p>
+			<hr>
+			<p><a href="">Produtos</a></p>
+			<hr>
+			<p><a href="">Filiais</a></p>
+			<hr>
+			<p><a href="">Cadastra-se</a></p>
+			<hr>
+			<p><a href="">Contato</a></p>
+
+
+		</div><!-- fim do menu laterial -->
+
+		<div id="principal"><!-- inicio principal -->
+			
+			<div class="noticia"><!-- inicio noticias -->
+				<h2>Lorem ipsum dolor sit amet</h2>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Curabitur gravida arcu ac tortor dignissim.
+				</p>
+				<a href="">Veja mais</a>
+			</div>
+
+			<div class="noticia">
+				<h2>Lorem ipsum dolor sit amet 2</h2>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Curabitur gravida arcu ac tortor dignissim.
+				</p>
+				<a href="">Veja mais</a>
+			</div>
+
+			<div class="noticia">
+				<h2>Lorem ipsum dolor sit amet 3</h2>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Curabitur gravida arcu ac tortor dignissim.
+				</p>
+				<a href="">Veja mais</a>
+			</div><!-- fim noticias -->
+
+			<!-- limpando o resto do ponto flutuante -->
+			<div class="clear"></div>
+
+			<div class="teste"><!-- inicio da galeria de fotos -->
+				
+				<div class="imagem-galeria">
+					<img src="imagens/imagem1.png">
+					<p><strong>Soldado cuidando das crianças</strong></p>
+				</div>
+				<div class="imagem-galeria">
+					<img src="imagens/imagem2.png">
+					<p><strong>Inverno rigoroso</strong></p>
+				</div>
+				<div class="imagem-galeria">
+					<img src="imagens/imagem3.png">
+					<p><strong>A tristeza da humanidade</strong></p>
+				</div>
+				<div class="imagem-galeria">
+					<img src="imagens/imagem4.png">
+					<p><strong>Nasce o novo futuro</strong></p>
+				</div>
+				<div class="imagem-galeria">
+					<img src="imagens/imagem5.png">
+					<p><strong>Lembranças boas devem ser marcadas</strong></p>
+				</div>
+				<div class="imagem-galeria">
+					<img src="imagens/imagem1.png">
+					<p><strong>Soldado cuidando das crianças</strong></p>
+				</div>
+
+				<!-- limpando o resto do pont flutuante -->
+				<div class="clear"></div>
+
+			</div><!-- fim da galeria de fotos -->
+			
+		</div> <!-- fim principal -->
+
+	</body>
+	</html>

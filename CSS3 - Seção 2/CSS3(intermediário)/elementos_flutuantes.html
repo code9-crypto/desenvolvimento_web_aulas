@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+		<title>Elementos flutuantes</title>
+		<style type="text/css">
+			
+			#principal{
+				border: 5px solid red;
+				background: green;
+			}
+
+			.conteudo{
+				background: blue;
+				border: 1px solid gray ;
+				width: 200px;
+				height: 200px;
+				float: left;
+				margin: 10px;
+			}
+
+			/*.conteudo1{
+				background: red;
+				border: 1px solid gray ;
+				width: 200px;
+				height: 200px;
+				right, left, none
+				float: left;
+				margin: 10px;
+			}*/
+
+			/*Ao usar pontos flutuantes junto com texto, para manter o texto corretamente alinhado ou embaixo, usa-se a propriedade clear*/
+			.clear{
+				/*left, right, both, none*/
+				clear: both;
+			}
+
+		</style>
+
+	</head>
+	<body>
+
+		<div id="principal">
+
+			<div class="conteudo">
+				conteudo 1
+			</div>
+
+			<div class="conteudo">
+				conteudo 2
+			</div>
+
+			<div class="conteudo">
+				conteudo 3
+			</div>
+
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Curabitur gravida arcu ac tortor dignissim. Facilisis magna etiam tempor orci. At augue eget arcu dictum varius duis at consectetur lorem. Et odio pellentesque diam volutpat. Posuere ac ut consequat semper viverra nam. Vitae elementum curabitur vitae nunc sed. Enim eu turpis egestas pretium aenean pharetra. Ipsum dolor sit amet consectetur adipiscing elit. Eget felis eget nunc lobortis mattis aliquam faucibus purus. Quam pellentesque nec nam aliquam sem et tortor consequat. Mi tempus imperdiet nulla malesuada pellentesque.
+
+				Suspendisse ultrices gravida dictum fusce ut placerat orci nulla. Diam donec adipiscing tristique risus nec feugiat in fermentum posuere. Non blandit massa enim nec. Tincidunt tortor aliquam nulla facilisi cras fermentum odio eu. Ipsum consequat nisl vel pretium lectus quam id. Erat velit scelerisque in dictum non consectetur. Nam at lectus urna duis. Adipiscing diam donec adipiscing tristique risus nec. Mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien. Pharetra pharetra massa massa ultricies mi quis. In aliquam sem fringilla ut morbi tincidunt augue. Nullam non nisi est sit amet facilisis magna etiam. Pellentesque adipiscing commodo elit at imperdiet. Dictum varius duis at consectetur lorem donec. Malesuada pellentesque elit eget gravida cum sociis. Etiam sit amet nisl purus in mollis. Metus dictum at tempor commodo ullamcorper a.
+
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Curabitur gravida arcu ac tortor dignissim. Facilisis magna etiam tempor orci. At augue eget arcu dictum varius duis at consectetur lorem. Et odio pellentesque diam volutpat. Posuere ac ut consequat semper viverra nam. Vitae elementum curabitur vitae nunc sed. Enim eu turpis egestas pretium aenean pharetra. Ipsum dolor sit amet consectetur adipiscing elit. Eget felis eget nunc lobortis mattis aliquam faucibus purus. Quam pellentesque nec nam aliquam sem et tortor consequat. Mi tempus imperdiet nulla malesuada pellentesque.
+
+				Suspendisse ultrices gravida dictum fusce ut placerat orci nulla. Diam donec adipiscing tristique risus nec feugiat in fermentum posuere. Non blandit massa enim nec. Tincidunt tortor aliquam nulla facilisi cras fermentum odio eu. Ipsum consequat nisl vel pretium lectus quam id. Erat velit scelerisque in dictum non consectetur. Nam at lectus urna duis. Adipiscing diam donec adipiscing tristique risus nec. Mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien. Pharetra pharetra massa massa ultricies mi quis. In aliquam sem fringilla ut morbi tincidunt augue. Nullam non nisi est sit amet facilisis magna etiam. Pellentesque adipiscing commodo elit at imperdiet. Dictum varius duis at consectetur lorem donec. Malesuada pellentesque elit eget gravida cum sociis. Etiam sit amet nisl purus in mollis. Metus dictum at tempor commodo ullamcorper a.
+			</p>
+
+			<div class="clear"></div>
+
+		</div>
+
+	</body>
+	</html>

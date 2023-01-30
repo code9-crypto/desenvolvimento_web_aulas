@@ -1,0 +1,203 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	background: #68b2f8;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;	
+}
+
+#cabecalho{
+	text-align: center;
+	background: #506ee5;
+	padding: 30px;
+	margin: 0 auto;
+}
+
+#menu-cabecalho{
+	text-align: center;
+	padding: 25px;
+	margin: 0 auto;
+	width: 55%;
+	clear: both;
+}
+
+
+#menu-cabecalho a{
+	padding: 6px;
+	width: 150px;
+	display: block;
+	float: left;
+	font-size: 1.2em;
+	text-decoration: none;
+	color: #fff;
+	margin: 0 auto;
+	background: #1d0c20;
+}
+
+#cabecalho a:hover, #cabecalho #menu-cabecalho .inicio a,
+#cabecalho #menu-cabecalho .produtos a,
+#cabecalho #menu-cabecalho .servicos a,
+#cabecalho #menu-cabecalho .contatos a,
+#cabecalho #menu-cabecalho .produtos a{
+	background: #29088A;
+	color: white;
+}
+
+ul li{
+	list-style-type: none;
+	background: #56B6CF;
+	text-decoration: none;
+}
+
+#menu-lateral a{
+	text-decoration: none;
+	display: block;
+	width: 100%;
+	line-height: 30px;
+	color: #506ee5;
+	font-weight: bold;
+	text-align: center;
+}
+
+#menu-lateral a:hover{
+	background: #1d0c20;
+	color: white;
+}
+
+
+#principal{
+	width: 64%;
+	margin: 0 auto;
+	min-width: 720px;
+}
+
+#whatsapp{
+	position: fixed;
+	bottom: 30px;
+	left: 1400px;
+}
+
+#rodape{
+	text-align: center;
+	clear: both;
+	background: #506ee5;
+	margin: 0 auto;
+	width: 100%;
+}
+
+#conteudo-principal{
+	float: left;
+	width: 68%;
+	background: #56B6CF;
+	font-size: 1.2em;
+	margin-bottom: 5px;
+}
+
+#conteudo-principal .produtos{
+	list-style-type: none;
+}
+
+#conteudo-principal .produtos li{
+	padding: 10px;
+}
+
+#menu-lateral{
+	float: right;
+	width: 26%;
+}
+
+#conteudo-principal #contato{
+	margin-top: 10px;
+}
+
+#conteudo-principal #contato a{
+	text-decoration: none;
+	color: black;
+}
+
+#conteudo-principal #contato a:hover{
+	text-decoration: underline;
+}
+
+#menu-lateral p{
+	padding: 10px;
+	background: #56B6CF;
+}
+
+#menu-lateral h3{
+	padding: 0px;
+	background: #422312;
+	color: white;
+	text-align: center;
+}
+
+#conteudo-principal h2{
+	background: #422312;
+	color: white;
+}
+
+#climatizadores{
+	margin-left: 12px;
+}
+
+#ventiladores{
+	margin-left: 12px;
+}
+
+img.produtos{
+	width: 30%;
+	padding: 1%;
+}
+
+img.servicos{
+	width: 95%;
+	padding: 1%;
+	position: relative;
+	left: 1.5%;
+}
+
+h2{
+	padding-left: 5px;
+}
+
+th{
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+}
+
+.reauce:hover{
+	background-color: #506ee5;
+}
+
+table{
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.tabela{
+	text-align: center;
+}
+
+textarea{
+	border-radius: 5px;
+	width: 100%;
+	height: 50px;
+	margin-bottom: 0;
+	margin-top: 2px;
+	border: none;
+}
+
+input.submit{
+	width: 100%;
+	border-radius: 5px;
+	border: none;
+	height: 20px;
+	cursor: pointer;
+	margin-bottom: 10px;
+}
+
+input.submit:hover{
+	background: #506ee5;
+}

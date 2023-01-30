@@ -1,0 +1,469 @@
+/**************************************************/
+/*Seletores intermediarios e avançados*/
+
+/*seletor universal => Aplica-se em todos os elementos no documento
+
+*{
+	border: 1px solid red;
+}
+
+*/
+
+/*seletor de texto => Seleciona elementos pelo tipo
+
+h1{
+	color: green;
+}
+
+*/
+
+/*seletor de classe => Seleciona um elemento cujo atributo class tem o valor especificado depois do ponto
+
+.verde{
+	color: green;
+}
+
+p.verde{	=> aqui está aplicando a formatação na tag <p> que tenha a class=verde
+	color: green;
+}
+
+*/
+
+/*Seletor de ID => Seleciona um elemento cujo atributo id tem o valor especificado após o símbolo de cerquilha ou jogo da velha
+
+#cabecalho{
+	border: 1px solid blue;
+}
+
+*/
+
+/*Seletor de filho => Seleciona um elemento que é filho direto de outro
+
+li>a{
+	color: green;
+	text-decoration: none;
+}
+
+*/
+
+/*Seletor de descendente => Seleciona um elemento que é descendente de outro elemento
+especificado (e não apenas filho direto desse elemento)
+
+div a{
+	color: greenyellow;
+}
+
+*/
+
+/*Seletor de irmão adjacente => Seleciona um elemento que é o irmão próximo de outro
+(OBS.: sempre de forma posterior)
+
+h1+p{
+	color: red;
+}
+
+*/
+
+/*Seletor de irmão geral => Seleciona um elemento que é um irmão de outro,
+embora ele não precise ser o elemento diretamente precedente
+
+h1~p{
+	color: seagreen;
+}
+
+*/
+/********************************************/
+
+/*********************************************/
+/*Herança e especificidade*/
+
+/*******************************************
+Criando barra vertical*/
+
+/*ul{
+	list-style-type: none; esta propriedade remove as figuras dos itens 
+	margin: 0;
+	padding: 0;
+}
+
+li{
+	padding: 10px 20px;
+	background: url('../imagens/seta.png') no-repeat center left;
+}*/
+
+/*ul{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+ul a{
+	width: 200px;
+	height: 40px;
+	display: block;
+	color: #000;
+	text-decoration: none;
+	text-indent: 40px;*Esta propriedade "arruma" o texto dentro da caixa
+	line-height: 40px;
+	background: #f7b600 url('../imagens/menu.png') left;
+}
+
+
+#home #navegacao .home a,
+#sobre #navegacao .sobre a,
+#servicos #navegacao .servicos a,
+#contato #navegacao .contato a,
+a:hover{
+	background-position: right;
+	background-color: #f99200;
+	color: white;	
+}*/
+
+/**********************************
+Criando barra horizontal*/
+/*ul{
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	width: 439px;
+	background: #159cb0 url('../imagens/fundo-horizontal.png') repeat-x;
+	float: left;
+}
+
+ul li{
+	float: left;
+}
+
+ul a{
+	display: block;
+	padding: 0 2em;
+	line-height: 2.2em;
+	text-decoration: none;
+	color: white;
+	background: url("../imagens/divisor.png") repeat-y;
+}
+
+ul .primeiro a{
+	background: none;
+}
+
+ul a:hover{
+	color: #085662;
+	background: #44ccad;
+}
+
+#home #navegacao .home a,
+#sobre #navegacao .sobre a,
+#servicos #navegacao .servicos a,
+#contato #navegacao .contato a,
+a:hover{
+	color: #085662;
+	background: #44ccad;
+}*/
+
+/******************************************
+Criando navegação com abas*/
+/*body{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+ul{
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	width: 720px;
+}
+
+ul li{
+	float: left;
+	background: url('../imagens/aba-direita.png') no-repeat top right;
+}
+
+li a{
+	display: block;
+	padding: 0 2em;
+	line-height: 3em;
+	text-decoration: none;
+	background: url('../imagens/aba-esquerda.png') no-repeat;
+	color: #fff;
+}
+
+ul a:hover{
+	color: #894a1f;
+}
+
+ul #atual{
+	background: url('../imagens/aba-direita-atual.png') no-repeat top right;
+}
+
+ul #atual a{
+	background: url('../imagens/aba-esquerda-atual.png') no-repeat top left;
+}*/
+
+/*****************************
+Layout de largura fixa e líquida (colunas falsas)*/
+
+/*body{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	background: #f2f2f2;
+}
+
+#container{
+	width: 960px;
+	margin: 0 auto;
+	background: #fff;
+	min-width: 820px;
+	max-height: 960px;
+	background: #fff url('../imagens/coluna.png') repeat-y left top;
+}
+
+#marca{
+	height: 200px;
+	background: #225992 url('../imagens/cabecalho2.jpg') no-repeat center;
+	text-align: center;
+	line-height: 200px;
+}
+
+#conteudo{
+	width: 75%;
+	float: right;
+	clear: both;
+}
+
+#conteudo-principal{
+	width: 62%;
+	float: left;
+}
+
+img.img-principal{
+	width: 90%;
+	padding: 2%;
+	max-width: 600px;
+}
+
+#conteudo-secundario{
+	width: 34%;
+	float: right;
+	background: #d1d1d1;
+}
+
+#conteudo-secundario h1,
+#conteudo-secundario h2,
+#conteudo-secundario h3,
+#conteudo-secundario p{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+
+#navegacao{
+	width: 23%;
+	float: left;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background: #d1d1d1;	
+}
+
+#rodape{
+	clear: both;
+	background: #c4c4c4;
+	padding-bottom: 5px;
+}
+
+#navegacao ul{
+	position: relative;
+	right: 20px;
+}
+
+#navegacao ul li{
+	list-style-type: none;
+}
+
+#navegacao ul a{
+	text-align: center;
+	text-decoration: none;
+	display: block;
+	line-height: 20px;
+	color: black;
+	padding: 8px;
+	background: #d1d1d1;
+}
+
+#navegacao a:hover, #container #navegacao .selecionado a{
+	color: black;
+	background: #9e9e9e;
+}*/
+
+/****************************************
+Estilizando tabelas*/
+/*body{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+table{
+	width: 600px;
+	border-collapse: collapse;
+	
+	separate => deixa um espaçamento entre as bordas da coluna
+	collapse => não deixa espaçamento entre as bordas da coluna
+	
+}
+
+th, td{
+	padding: 7px;
+}
+
+th{
+	text-transform: uppercase;transforma todas as letras em maiúsculas
+	border-top: 1px solid #999;
+	border-bottom: 1px solid #111;
+	text-align: left;
+	font-size: 90%;
+	letter-spacing: 0.1em;espaçamento entre letras
+}
+
+.produtos{
+	text-align: center;
+}
+
+tr.alternado{
+	background-color: #efefef;
+}
+
+tr:hover.realcado{
+	background-color: #c3e6e5;
+}
+
+.numero{
+	text-align: right;
+}*/
+
+/****************************************************
+Estilizando formulários*/
+/*body{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+fieldset{
+	padding: 1em;
+	border: 1px solid #CCC;
+	background: #f8f8f8;
+	margin: 1em 0;
+}
+
+legend{
+	font-weight: bold;
+}
+
+label{
+	display: block;
+	cursor: pointer; muda a forma do cursor para uma mão 
+	width: 8%;
+}
+
+input[type="text"]{
+	width: 100%;
+}
+
+textarea{
+	width: 20em;
+	height: 10em;
+}
+
+input.radio, input.checkbox, input.submit{
+	width: auto;
+}
+
+.radio{
+	margin-right: 1em;
+}*/
+
+/***********************************************
+Estilizando formularios parte 2 (interface de login)*/
+body{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	background: #643d87 url('../imagens/fundo.jpg') no-repeat top center;
+}
+
+#container{
+	width: 400px;
+	height: 300px;
+	background-color: rgba(255, 255, 255, 0.3);
+	border-radius: 10px;  /*deixa arredondamento nas bordas das caixas de text*/
+	margin: 0 auto;
+	margin-top: 120px;
+	text-align: center;
+}
+
+#container img{
+	width: 120px;
+	height: 120px;
+	margin-top: -60px;	
+}
+
+input{
+	height: 40px;
+	width: 80%;
+	font-size: 18px;
+	margin-bottom: 10px;
+	background-color: #fff;
+	padding-left: 40px;
+	border: none;
+	background-repeat: no-repeat;
+	background-position: 15px;
+	border-radius: 20px;
+}
+
+input.email{
+	margin-top: 20px;
+	background-image: url('../imagens/icone-usuario.png');
+}
+
+input.senha{
+	margin-top: 10px;
+	background-image: url('../imagens/icone-cadeado.png');
+}
+
+input.submit{
+	margin-top: 10px;
+	color: #fff;
+	background-color: #f79300;
+	border: 2px solid #db7d00;
+	padding: 5px 20px;
+	height: 45px;
+	width: 90%;
+	background: linear-gradient(to bottom, #faa600, #f68a00);
+	cursor: pointer;
+}
+
+/*********************************************************
+Arredondamento com imagens*/
+.caixa{
+	width: 400px;
+	background: #dedede url('../imagens/fundo-arredondamento.png') repeat-y;	
+}
+
+.caixa h2{
+	padding: 10px 20px 0 20px;
+	background: url('../imagens/topo2.png') no-repeat top left;
+}
+
+.caixa .ultimo{
+	background: url('../imagens/baixo2.png') no-repeat left bottom;
+	width: 400px;
+	height: 20px;
+}
+
+.caixa p{
+	padding: 0 20px;
+	margin-bottom: 0;
+}
+
+/*.caixa p{
+	padding: 0 20px 20px 20px;
+	background: url('../imagens/baixo2.png') no-repeat left bottom;
+}
+
+.caixa h2{
+	padding: 10px 20px 0 20px;
+}*/
