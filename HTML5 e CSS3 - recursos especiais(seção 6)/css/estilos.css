@@ -1,18 +1,79 @@
+/********************************
+Animações*/
+@keyframes animacao{
+	from{
+		background: red;
+		border-radius: 0;
+		top: 0;
+		left: 0;
+	}
+
+	to{
+		background: yellow;
+		border-radius: 300px;
+		top: 200px;
+		left: 200px;
+		top: 400px;
+		left: 400px;
+	}
+}
+
+
 #caixa{
+	width: 300px;
+	height: 300px;
+	background: red;
+	box-sizing: border-box;
+	position: relative;
+	animation: animacao 10s 0s 10 alternate;
+}
+
+
+
+/*#caixa{
+	width: 300px;
+	height: 300px;
+	box-sizing: border-box;
+	padding: 15px;
+	margin: 20px;
+	background: #009670;
+	box-shadow: -10px -10px 10px rgba(0, 0, 0, 0.5);
+}
+
+#caixa h1{
+	color: white;
+	text-shadow: -10px -10px black;
+	text-shadow: -10px -10px 2px rgba(0, 0, 0, 0.5);
+}*/
+
+/*#caixa{
+	width: 300px;
+	height: 300px;
+	background: url('../imagens/camera.png');
+	background: linear-gradient(45deg, red, green, yellow, green);
+	background: radial-gradient(red, green, yellow, gray);
+	box-sizing: border-box;
+}*/
+
+/*#caixa h1{
+	background: rgba(255, 255, 255, 0.5);
+}*/
+
+/*#caixa{
 	width: 400px;
 	height: 300px;
 	background-color: #b9c941;
-	box-sizing: border-box;/*Neste propriedade,
+	box-sizing: border-box;Neste propriedade,
 	o tamanho da caixa é fixa e não se modifica
-	caso o conteúdo seja grande, apenas se adapta*/
+	caso o conteúdo seja grande, apenas se adapta
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
-	padding: 50px 30px;
+	padding: 50px 30px;*/
 
 	/*-webkit-border-radius: 20px 90px;
 	-moz-border-radius: 20px 90px;
 	border-radius: 20px 90px;*/
-}
+/*}
 
 #caixa2{
 	width: 300px;
@@ -20,9 +81,10 @@
 	background-color: #b9c941;
 	box-sizing: border-box;
 	padding: 50px 30px;
-	margin-top: 10px;
+	margin-top: 10px;*/
 	/*-webkit-border-radius: 20px 90px;
 	-moz-border-radius: 20px 90px;
 	border-radius: 20px 90px;*/
-}
+/*}*/
+
 
