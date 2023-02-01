@@ -1,6 +1,97 @@
+/*********************************
+Novas tags html -> header, nav, footer, article, section, time, aside*/
+header{
+	padding: 10px;
+	background: #f2f2f2;
+	border: 1px solid #ccc;
+	text-align: center;
+}
+
+nav{
+	border: 1px solid green;
+	background: #f2f2f2;
+	padding: 10px;
+}
+
+nav ul{
+	text-align: center;
+	margin: 0 auto;
+}
+
+nav li{
+	margin-top: 10px;
+	list-style: none;
+	float: left;
+	display: block;
+	padding: 10px;
+	margin-right: 20px;
+	background: yellow;
+	border-radius: 20px;
+	width: 150px;
+	text-align: center;
+}
+
+footer{
+	background: gray;
+}
+
+article{
+	background: orange;
+	padding: 10px;
+}
+
+section{
+	border: 1px dotted white;
+	margin-bottom: 5px;
+}
+
+aside{
+	background: blue;
+	float: right;
+	margin-top: -50px;
+	height: 70px;
+	line-height: 30px;
+}
+
+
+
+
+
+
+
+
+/*********************************
+Transições*/
+/*#caixa{
+	width: 300px;
+	height: 5px;
+	background: orange;
+}
+
+#caixa:hover {
+	width: 400px;
+	background: yellow;	
+	-webkit-transition: width 3s, background 3s;;
+	-moz-transition: width 3s, background 3s;;
+	-o-transition: width 3s, background 3s;;
+	transition: width 1s, background 1s;
+}
+
+h1{
+	border-bottom: 1px solid black;
+	display: inline;
+}
+
+h1:hover{
+	border-bottom: 1px solid yellow;
+	transition: background 1s;
+}*/
+
+
+
 /********************************
 Animações*/
-@keyframes animacao{
+/*@keyframes animacao{
 	from{
 		background: red;
 		border-radius: 0;
@@ -26,7 +117,7 @@ Animações*/
 	box-sizing: border-box;
 	position: relative;
 	animation: animacao 10s 0s 10 alternate;
-}
+}*/
 
 
 
