@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<!-- estilo css normalize -->
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+
+		<!-- código js para fazer as novas tags html serem compátivels com navegadores mais antigos -->
+		<script type="text/javascript" src="js/html5shiv.js"></script>
+
+		<title>Flexbox</title>
+
+		<style type="text/css">
+			
+			#conteudo{
+				background: #dcdcdc;
+				height: 600px;
+				display: flex;/*deixa os itens um ao lado do outro*/
+
+				/* row|row-reverse|column|column-reverse */
+				flex-direction: row;
+
+				/* nowrap|wrap|wrap-reverse */
+				flex-wrap: nowrap;
+
+
+				/* flex-start|flex-end|center|space-between|space-around */
+				justify-content: space-around;
+
+				/* stretch|center|flex-start|flex-end|baseline */
+				align-items: baseline;
+
+			}
+
+			.item{
+				width: 100px;
+				height: 100px;
+				margin: 10px;
+				background: white;
+				border: 1px solid gray;
+				
+
+			}
+
+		</style>
+	</head>
+	<body>
+
+		<h1>Flexbox</h1>
+		<div id="conteudo">
+			<div class="item">01</div>
+			<div class="item">02</div>
+			<div class="item">03</div>
+			<div class="item">04</div>
+		</div>
+		
+	</body>
+</html>

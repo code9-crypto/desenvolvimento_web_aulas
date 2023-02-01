@@ -73,21 +73,24 @@ body{
 	line-height: 20px;
 	border-radius: 15px;
 	font-size: 18px;
+	box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.5);
 }
 
 #login .enviar:hover{
 	cursor: pointer;
 	background-color: grey;
 	color: white;
+	transition: background 0.3s, color 0.3s;
 }
 
 h3{
 	text-transform: uppercase;
 }
-
-
-
 /* FIM FORMATAÇÕES DA TELA DE LOGIN */
+
+
+
+/* INICIO FORMATAÇÕES DA TELA INICIAL  */
 #area-menu{
 	margin: 0 auto;
 	margin-top: -20px;
@@ -105,7 +108,9 @@ h3{
 	float: left;
 	width: 100%;
 	margin-top: 5px;
-
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
 }
 
 #navegacao li{
@@ -113,17 +118,46 @@ h3{
 	display: block;
 	width: 32%;
 	line-height: 50px;
-	margin-left: 5px;
 	color: black;
 	font-size: 18px;
 	border-radius: 15px;
 	border: 1px solid rgba(0, 0, 0, 0.3);
+	box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 #navegacao li:hover{
-	background: grey;
 	cursor: pointer;
+	background: grey;
+	color: white;
+	transition: background 0.5s, color 0.5s;
 }
 
+#area-botoes{
+	margin: 0 auto;
+	width: 900px;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: nowrap;
+	margin-top: 50px;	
+}
 
-/* INICIO FORMATAÇÕES DA TELA INICIAL  */
+#reavaliacao, #consulta{
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	background: gray;
+	color: black;
+	width: 350px;
+	height: 100px;
+	line-height: 50px;
+	border-radius: 15px;
+	font-size: 20px;
+	box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.5);
+}
+
+#reavaliacao:hover, 
+#consulta:hover{
+	color: white;
+	transition: color 0.5s;
+	cursor: pointer;
+}
