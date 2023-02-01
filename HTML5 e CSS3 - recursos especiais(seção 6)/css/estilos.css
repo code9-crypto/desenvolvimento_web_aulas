@@ -15,10 +15,11 @@ nav{
 
 nav ul{
 	text-align: center;
-	margin: 0 auto;
+	border: 1px solid red;
 }
 
 nav li{
+	border: 1px dashed blue;
 	margin-top: 10px;
 	list-style: none;
 	float: left;
@@ -33,6 +34,9 @@ nav li{
 
 footer{
 	background: gray;
+	text-align: center;
+	width: 500px;
+	margin: 0 auto;
 }
 
 article{

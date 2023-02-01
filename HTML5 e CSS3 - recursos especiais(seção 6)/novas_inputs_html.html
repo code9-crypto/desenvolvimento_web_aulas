@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<!-- estilo css customizado -->
+		<link rel="stylesheet" type="text/css" href="css/estilos.css">
+
+		<!-- estilo css normalize -->
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+
+		<!-- código js para fazer as novas tags html serem compátivels com navegadores mais antigos -->
+		<script type="text/javascript" src="js/html5shiv.js"></script>
+
+		<title>Novas tags input HTML</title>
+	</head>
+	<body>
+
+		<form>
+
+			<!-- novo atributo autofocus="autofocus" -->
+			<label for="nome">Nome:</label>
+			<input type="text" id="nome" autofocus="autofocus">
+			<br><br>
+
+			<!-- novo atributo required(obrigatório) -->
+			<label for="email">Email:</label>
+			<input type="email" id="email" >
+			<br><br>
+
+			<!-- number -->
+			<label for="numero">Número:</label>
+			<input type="number" id="numero" min="1" max="20" step="5">
+			<br><br>
+
+			<!-- Url -->
+			<label for="url">Url:</label>
+			<input type="url" id="url" placeholder="ex: http://www....">
+			<br><br>
+
+			<!-- Pesquisa -->
+			<label for="pesquisa">Pesquisa:</label>
+			<input type="search" id="search">
+			<br><br>
+
+			<!-- Range -->
+			<label for="range">Range:</label>
+			<input type="range" id="range" min="1" max="20" value="10">
+			<br><br>
+
+			<!-- Data -->
+			<label for="data">DATA:</label>
+			<input type="date" id="data">
+			<br><br>
+
+			<!-- Cor -->
+			<label for="cor">COR:</label>
+			<input type="color" id="cor">
+			<br><br>
+
+			<input type="submit" value="enviar">
+
+		</form>
+		
+	</body>
+</html>
