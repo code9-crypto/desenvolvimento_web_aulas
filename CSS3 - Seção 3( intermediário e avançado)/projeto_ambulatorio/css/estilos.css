@@ -8,9 +8,63 @@ body{
 	background: #F6F6F6;
 	font-family: sans-serif;
 }
+
+ul li a{
+	display: block;
+	text-decoration: none;
+	color: black;
+}
+
+a:hover{
+	color: white;
+	transition: color 0.5s;	
+}
+
+#area-botoes, #area-botoes-profissionais, #area-botoes-pacientes{
+	margin: 0 auto;
+	width: 900px;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: nowrap;
+	margin-top: 50px;
+}
+
+#reavaliacao, #consulta,
+#cadastrar, #atualizar,
+#pesquisar, #apagar{
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	background: gray;
+	color: black;
+	width: 350px;
+	height: 100px;
+	line-height: 50px;
+	border-radius: 15px;
+	font-size: 20px;
+	box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.5);
+}
+
+.inicio a{
+	background: gray;
+	display: block;
+	width: 200px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	text-decoration: none;
+	color: black;
+	border-radius: 20px;
+}
+
+.inicio a:hover{
+	color: white;
+	transition: color 0.5s;
+}
+
 /* FIM FORMATAÇÕES GERAIS  */
 
-
+/*--------------------------------------------------------------*/
 
 /* INICIO FORMATAÇÕES DA TELA DE LOGIN */
 #container-principal{
@@ -88,7 +142,7 @@ h3{
 }
 /* FIM FORMATAÇÕES DA TELA DE LOGIN */
 
-
+/*--------------------------------------------------------------*/
 
 /* INICIO FORMATAÇÕES DA TELA INICIAL  */
 #area-menu{
@@ -132,32 +186,50 @@ h3{
 	transition: background 0.5s, color 0.5s;
 }
 
-#area-botoes{
-	margin: 0 auto;
-	width: 900px;
-	display: flex;
-	justify-content: space-around;
-	flex-wrap: nowrap;
-	margin-top: 50px;	
-}
-
-#reavaliacao, #consulta{
-	text-decoration: none;
-	text-align: center;
-	display: block;
-	background: gray;
-	color: black;
-	width: 350px;
-	height: 100px;
-	line-height: 50px;
-	border-radius: 15px;
-	font-size: 20px;
-	box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.5);
-}
 
 #reavaliacao:hover, 
 #consulta:hover{
 	color: white;
 	transition: color 0.5s;
 	cursor: pointer;
+}
+/* FIM FORMATAÇÕES DA TELA INICIAL  */
+
+/*--------------------------------------------------------------*/
+
+/* INICIO FORMATAÇÕES DA TELA PACIENTES  */
+#pacientes #container-principal #area-menu #menu #navegacao .realce{	
+	background: grey;
+	color: white;
+}
+
+#area-botoes-pacientes{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+#area-botoes-pacientes a{
+	margin: 20px;
+	line-height: 100px;
+}
+/* FIM FORMATAÇÕES DA TELA PACIENTES */
+
+/*--------------------------------------------------------*/
+
+/* INICIO FORMATAÇÕES DA TELA PROFISSIONAIS */
+#profissionais #container-principal #area-menu #menu .realce{
+	background: grey;
+	color: white;
+}
+
+#area-botoes-profissionais{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+#area-botoes-profissionais a{
+	margin: 20px;
+	line-height: 100px;
 }
