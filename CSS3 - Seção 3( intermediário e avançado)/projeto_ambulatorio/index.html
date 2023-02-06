@@ -1,15 +1,23 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="utf-8">
-		
+		<meta charset="utf-8">		
+
 		<!-- Normalize CSS -->
 		<link rel="stylesheet" type="text/css" href="css/normalize.css">
 
 		<!-- Estilo customizado -->
 		<link rel="stylesheet" type="text/css" href="css/estilos.css">
+
+		<!-- Meta tags Obrigatórias -->
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	    <!-- Bootstrap CSS -->
+	    <link rel="stylesheet" href="css/bootstrap.min.css">
+
 		
-		<title>Controle de Acesso</title>
+		<title>Inicio</title>
 	</head>
 	<body>
 
@@ -22,27 +30,69 @@
 
 			</div><!-- fim topo -->
 
-			<div id="area-login"><!-- fim area-login -->
+			<div id="area-menu"><!-- inicio area-menu -->
 				
-				<div id="login">
-					<h3>Controle de Acesso</h3>
-					<form>
+				<div id="menu"><!-- inicio menu -->
+					<h3>inicio</h3>
+					<ul id="navegacao">
+						<li><a href="pacientes.html">Pacientes</a></li>
+						<li><a href="profissionais.html">Profissionais</a></li>
+						<li data-toggle="modal" data-target="#atendimentos">Atendimentos</li>
+					</ul>
+					<div style="clear:both"></div>
+				</div><!-- fim menu -->
 
-						<div>
-							<input class="login" type="text" name="usuario" id="usuario" placeholder="Digite seu login">	
-						</div>
+				<div id="area-botoes">
 
-						<div>
-							<input class="senha" type="password" name="senha" id="senha" placeholder="Digite sua senha">	
-						</div>
-						
-						<input class="enviar" type="submit" value="Logar">
-					</form>	
+					<a href="" id="reavaliacao">
+						Fichas de atendimentos<br>
+						(REAVALIAÇÃO)
+					</a>
+
+					<a href="" id="consulta">
+						Fichas de atendimentos<br>
+						(CONSULTAS)
+					</a>
+
 				</div>
-
-			</div><!-- fim area-login -->
+					
+				
+			</div><!-- fim area-menu -->
 
 		</div><!-- fim container-principal -->
 
+		<!-- Inicio modal -->
+		<div class="modal fade" id="atendimentos" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog modal-lg" role="document" style="width: 1000px">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLabel">FICHA DE ATENDIMENTO</h5>
+		      </div>
+		      <div class="modal-body">
+		        <form>
+		        	Evento:<input type="text" name="evento">
+		        	Atendendo o(a):
+		        	<select>
+		        		<option>William Caetano de Souza</option>
+		        		<option>Ester Juliane Caetano de Souza</option>
+		        		<option>Eli Rosa França</option>
+		        		<option>Elizeu Rosa França</option>
+		        	</select>
+		        </form>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+		        <button type="submit" class="btn btn-primary">Salvar mudanças</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<!-- Fim modal -->
+
+		<!-- JavaScript (Opcional) -->
+    	<!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+	    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	    <script src="js/bootstrap.min.js"></script>
 	</body>
 </html>

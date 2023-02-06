@@ -17,7 +17,7 @@ ul li a{
 
 a:hover{
 	color: white;
-	transition: color 0.5s;	
+	transition: color 0.5s;
 }
 
 #area-botoes, #area-botoes-profissionais, #area-botoes-pacientes{
@@ -45,7 +45,15 @@ a:hover{
 	box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.5);
 }
 
+#cadastrar:hover, #atualizar:hover,
+#pesquisar:hover, #apagar:hover{
+	color: white;
+	transition: color 0.5s;
+	cursor: pointer;
+}
+
 .inicio a{
+	text-transform: uppercase;
 	background: gray;
 	display: block;
 	width: 200px;
@@ -58,8 +66,10 @@ a:hover{
 }
 
 .inicio a:hover{
+	text-transform: uppercase;
 	color: white;
 	transition: color 0.5s;
+	text-decoration: none;
 }
 
 /* FIM FORMATAÇÕES GERAIS  */
@@ -120,7 +130,7 @@ a:hover{
 }
 
 #login .enviar{
-	width: 53.5%;
+	width: 50%;
 	margin-bottom: 10px;
 	padding: 8px;
 	text-transform: uppercase;
@@ -177,6 +187,20 @@ h3{
 	border-radius: 15px;
 	border: 1px solid rgba(0, 0, 0, 0.3);
 	box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+#navegacao li a{
+	text-decoration: none;
+	color: black;
+	display: block;
+}
+
+#navegacao li a:hover{
+	cursor: pointer;
+	background: grey;
+	color: white;
+	transition: background 0.5s, color 0.5s;
+	border-radius: 15px;
 }
 
 #navegacao li:hover{

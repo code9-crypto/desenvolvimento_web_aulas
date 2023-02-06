@@ -16,9 +16,9 @@
 	    <!-- Bootstrap CSS -->
 	    <link rel="stylesheet" href="css/bootstrap.min.css">
 		
-		<title>Pacientes</title>
+		<title>Controle de Acesso</title>
 	</head>
-	<body id="pacientes">
+	<body>
 
 		<div id="container-principal"><!-- inicio container-principal -->
 			
@@ -29,40 +29,25 @@
 
 			</div><!-- fim topo -->
 
-			<div id="area-menu"><!-- inicio area-menu -->
-
-				<div id="menu"><!-- inicio menu -->
-					<ul id="navegacao">
-						<li class="realce"><a href="">Pacientes</a></li>
-						<li><a href="profissionais.html">Profissionais</a></li>
-						<li>Atendimentos</li>
-					</ul>
-					<div style="clear:both"></div>
-				</div><!-- fim menu -->
+			<div id="area-login"><!-- fim area-login -->
 				
-				<div id="area-botoes-pacientes"><!-- inicio area-botoes -->
+				<div id="login">
+					<h3>Controle de Acesso</h3>
+					<form>
 
-					<a href="" id="cadastrar">
-						CADASTRAR
-					</a>
+						<div>
+							<input class="login" type="text" name="usuario" id="usuario" placeholder="Digite seu login">	
+						</div>
 
-					<a href="" id="atualizar">
-						ATUALIZAR
-					</a>
-
-					<a href="" id="pesquisar">
-						PESQUISAR
-					</a>
-
-					<a href="" id="apagar">
-						APAGAR
-					</a>
-
-				</div><!-- fim area-botoes -->
-				<div class="inicio">
-					<a href="index.html"><< Inicio</a>
+						<div>
+							<input class="senha" type="password" name="senha" id="senha" placeholder="Digite sua senha">	
+						</div>
+						
+						<input class="enviar" type="submit" value="Logar">
+					</form>	
 				</div>
-			</div><!-- fim area-menu -->
+
+			</div><!-- fim area-login -->
 
 		</div><!-- fim container-principal -->
 
