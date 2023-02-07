@@ -35,7 +35,7 @@
 					<ul id="navegacao">
 						<li><a href="pacientes.html">Pacientes</a></li>
 						<li class="realce"><a href="">Profissionais</a></li>
-						<li>Atendimentos</li>
+						<li data-toggle="modal" data-target="#atendimentos">Atendimentos</li>
 					</ul>
 					<div style="clear:both"></div>
 				</div><!-- fim menu -->
@@ -67,6 +67,43 @@
 			</div><!-- fim area-menu -->
 
 		</div><!-- fim container-principal -->
+
+
+
+<!-- -----------AO CLICAR NO BOTÃO ATENDIMENTOS ABRIRÁ ESSE MODAL QUE É A TELA DE FICHAS DE ATENDIMENTOS(ABAIXO)-------------- -->
+
+		<!-- Inicio modal -->
+		<div class="modal fade" id="atendimentos" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog modal-lg" role="document" style="width: 1000px">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLabel">FICHA DE ATENDIMENTO</h5>
+		      </div>
+		      <div class="modal-body">
+		        <form>
+		        	Evento:<input type="text" name="evento">
+		        	Atendendo o(a):
+		        	<select>
+		        		<option>William Caetano de Souza</option>
+		        		<option>Ester Juliane Caetano de Souza</option>
+		        		<option>Eli Rosa França</option>
+		        		<option>Elizeu Rosa França</option>
+		        	</select>
+		        </form>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+		        <button type="submit" class="btn btn-primary">Salvar mudanças</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<!-- Fim modal -->
+
+
+<!-- -----------AO CLICAR NO BOTÃO ATENDIMENTOS ABRIRÁ ESSE MODAL QUE É A TELA DE FICHAS DE ATENDIMENTOS(ACIMA)-------------- -->
+
+
 
 		<!-- JavaScript (Opcional) -->
     	<!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
