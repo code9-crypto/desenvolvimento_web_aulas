@@ -65,14 +65,20 @@
 
 		<!-- Inicio modal -->
 		<div class="modal fade" id="atendimentos" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-		  <div class="modal-dialog modal-lg" role="document" style="width: 1000px">
+		  <div class="modal-dialog modal-lg" role="document">
 		    <div class="modal-content">
 		      <div class="modal-header">
-		        <h5 class="modal-title" id="exampleModalLabel">FICHA DE ATENDIMENTO</h5>
+		        <h5 class="modal-title font-weight-bold" id="exampleModalLabel">FICHA DE ATENDIMENTO</h5>
 		      </div>
 		      <div class="modal-body">
-		        <form>
-		        	Evento:<input type="text" name="evento">
+		        <form><!-- Inicio form -->
+		        	Evento:
+		        	<select>
+		        		<option>Reunião geral ministerial</option>
+		        		<option>Reunião geral de ensinamento</option>	
+		        		<option>Ensaio musical regional</option>	
+		        	</select>
+		        	<img src="imagens/add_evento.png" width="40" height="40">
 		        	Atendendo o(a):
 		        	<select>
 		        		<option>William Caetano de Souza</option>
@@ -80,7 +86,12 @@
 		        		<option>Eli Rosa França</option>
 		        		<option>Elizeu Rosa França</option>
 		        	</select>
-		        </form>
+		        	<img src="imagens/cadeadoVermelho.png" width="40" height="40">
+		        	DATA: <input type="date" name="data">
+		        	HORA: <input type="text" name="hora" style="width: 10%">
+		        	ALOJAMENTO: <input type="text" name="alojamento" style="width: 17%">
+		        	CLÍNICA: <input type="text" name="clinica" style="width: 17%">
+		        </form><!-- Fim form -->
 		      </div>
 		      <div class="modal-footer">
 		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
