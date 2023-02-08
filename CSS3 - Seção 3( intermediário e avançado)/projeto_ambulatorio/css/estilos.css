@@ -35,19 +35,22 @@ a:hover{
 	text-decoration: none;
 	text-align: center;
 	display: block;
-	background: gray;
 	color: black;
 	width: 350px;
-	height: 100px;
+	height: 120px;
 	line-height: 50px;
 	border-radius: 15px;
 	font-size: 20px;
 	box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.5);
+	font-family: Verdana;
+	font-size: 1.5em;
+	font-weight: bold;
 }
 
 #cadastrar:hover, #atualizar:hover,
 #pesquisar:hover, #apagar:hover{
 	color: white;
+	background: #053C12;
 	transition: color 0.5s;
 	cursor: pointer;
 }
@@ -197,7 +200,7 @@ h3{
 
 #navegacao li a:hover{
 	cursor: pointer;
-	background: grey;
+	background: #241204;
 	color: white;
 	transition: background 0.5s, color 0.5s;
 	border-radius: 15px;
@@ -205,7 +208,7 @@ h3{
 
 #navegacao li:hover{
 	cursor: pointer;
-	background: grey;
+	background: #241204;
 	color: white;
 	transition: background 0.5s, color 0.5s;
 }
@@ -213,6 +216,7 @@ h3{
 
 #reavaliacao:hover, 
 #consulta:hover{
+	background: #053C12;
 	color: white;
 	transition: color 0.5s;
 	cursor: pointer;
@@ -223,7 +227,10 @@ h3{
 
 /* INICIO FORMATAÇÕES DA TELA PACIENTES  */
 #pacientes #container-principal #area-menu #menu #navegacao .realce{	
-	background: grey;
+	background: #241204;
+}
+
+#pacientes #container-principal #area-menu #menu #navegacao .realce a{
 	color: white;
 }
 
@@ -243,7 +250,10 @@ h3{
 
 /* INICIO FORMATAÇÕES DA TELA PROFISSIONAIS */
 #profissionais #container-principal #area-menu #menu .realce{
-	background: grey;
+	background: #241204;
+}
+
+#profissionais #container-principal #area-menu #menu .realce a{
 	color: white;
 }
 
