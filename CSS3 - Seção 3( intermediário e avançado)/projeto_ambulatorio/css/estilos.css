@@ -200,7 +200,7 @@ h3{
 
 #navegacao li a:hover{
 	cursor: pointer;
-	background: #241204;
+	background: #3FC5DA;
 	color: white;
 	transition: background 0.5s, color 0.5s;
 	border-radius: 15px;
@@ -208,7 +208,7 @@ h3{
 
 #navegacao li:hover{
 	cursor: pointer;
-	background: #241204;
+	background: #3FC5DA;
 	color: white;
 	transition: background 0.5s, color 0.5s;
 }
@@ -227,7 +227,7 @@ h3{
 
 /* INICIO FORMATAÇÕES DA TELA PACIENTES  */
 #pacientes #container-principal #area-menu #menu #navegacao .realce{	
-	background: #241204;
+	background: #3FC5DA;
 }
 
 #pacientes #container-principal #area-menu #menu #navegacao .realce a{
@@ -250,7 +250,7 @@ h3{
 
 /* INICIO FORMATAÇÕES DA TELA PROFISSIONAIS */
 #profissionais #container-principal #area-menu #menu .realce{
-	background: #241204;
+	background: #3FC5DA;
 }
 
 #profissionais #container-principal #area-menu #menu .realce a{

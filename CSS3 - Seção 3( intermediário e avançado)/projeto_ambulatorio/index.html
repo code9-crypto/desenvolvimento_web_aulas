@@ -88,9 +88,17 @@
 		        	</select>
 		        	<img src="imagens/cadeadoVermelho.png" width="40" height="40">
 		        	DATA: <input type="date" name="data">
-		        	HORA: <input type="text" name="hora" style="width: 10%">
-		        	ALOJAMENTO: <input type="text" name="alojamento" style="width: 17%">
-		        	CLÍNICA: <input type="text" name="clinica" style="width: 17%">
+		        	HORA: <input type="text" name="hora" style="width:45px" maxlength="5">
+		        	ALOJAMENTO: <input type="text" name="alojamento" style="width: 160px">
+		        	CLÍNICA: <input type="text" name="clinica" style="width: 135px">
+		        	<fieldset class="mt-2">
+		        		<legend style="font-size:0.8em;" class="font-weight-bold">ANTECEDENTES PESSOAIS</legend>
+			        		HAS <input type="checkbox" name="has" style="line-height: -4px;">
+			        		DM <input type="checkbox" name="dam">
+			        		DAC <input type="checkbox" name="dac">
+			        		CIRURGIA RECENTE <input type="checkbox" name="cr">
+			        		ALERGIA A: <input type="text" name="alergia" style="width:370px">
+		        	</fieldset>
 		        </form><!-- Fim form -->
 		      </div>
 		      <div class="modal-footer">
