@@ -80,7 +80,7 @@
 		      <div class="modal-body">
 		        <form><!-- Inicio form -->
 		        	Evento:
-		        	<select>
+		        	<select style="width:250px">
 		        		<option>Reunião geral ministerial</option>
 		        		<option>Reunião geral de ensinamento</option>	
 		        		<option>Ensaio musical regional</option>	
@@ -95,9 +95,26 @@
 		        	</select>
 		        	<img src="imagens/cadeadoVermelho.png" width="40" height="40">
 		        	DATA: <input type="date" name="data">
-		        	HORA: <input type="text" name="hora" style="width: 10%">
-		        	ALOJAMENTO: <input type="text" name="alojamento" style="width: 17%">
-		        	CLÍNICA: <input type="text" name="clinica" style="width: 17%">
+		        	HORA: <input type="text" name="hora" style="width:45px" maxlength="5">
+		        	ALOJAMENTO: <input type="text" name="alojamento" style="width: 160px">
+		        	CLÍNICA: <input type="text" name="clinica" style="width: 135px">
+		        	<fieldset class="mt-2">
+		        		<legend style="font-size:0.8em;" class="font-weight-bold">ANTECEDENTES PESSOAIS</legend>
+			        		HAS <input type="checkbox" name="has" style="line-height: -4px;">
+			        		DM <input type="checkbox" name="dam">
+			        		DAC <input type="checkbox" name="dac">
+			        		CIRURGIA RECENTE <input type="checkbox" name="cr">
+			        		ALERGIA A: <input type="text" name="alergia" style="width:370px">
+			        		MEDICAMENTOS EM USO:<br>
+			        		<textarea class="w-100"></textarea>
+			        		PA:<input type="text" name="pa" style="width:56px">
+			        		PULSO:<input type="text" name="pulso" style="width:56px">
+			        		TEMP:<input type="text" name="temp" style="width:56px">
+			        		GLICEMIA:<input type="text" name="glicemia" style="width:56px">
+			        		PESO:<input type="text" name="peso" style="width:56px">
+			        		ALTURA:<input type="text" name="altura" style="width:56px">
+			        		SATUR:<input type="text" name="saturacao" style="width:60px">
+		        	</fieldset>
 		        </form><!-- Fim form -->
 		      </div>
 		      <div class="modal-footer">
