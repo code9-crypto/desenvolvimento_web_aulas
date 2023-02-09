@@ -68,14 +68,17 @@
 
 
 
-<!-- -----------AO CLICAR NO BOTÃO ATENDIMENTOS ABRIRÁ ESSE MODAL QUE É A TELA DE FICHAS DE ATENDIMENTOS(ABAIXO)-------------- -->
+<!-- -----------AO CLICAR NO BOTÃO COM ID ATENDIMENTOS ABRIRÁ ESSE MODAL QUE É A TELA DE FICHAS DE ATENDIMENTOS(ABAIXO)-------------- -->
 
-		<!-- Inicio modal -->
-		<div class="modal fade" id="atendimentos" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<!-- INICIO MODAL FICHA DE ATENDIMENTO -->
+		<div class="modal fade clearfix" id="atendimentos" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 		  <div class="modal-dialog modal-lg" role="document">
 		    <div class="modal-content">
 		      <div class="modal-header">
 		        <h5 class="modal-title font-weight-bold" id="exampleModalLabel">FICHA DE ATENDIMENTO</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+	          		<span aria-hidden="true">&times;</span>
+	        	</button>
 		      </div>
 		      <div class="modal-body">
 		        <form><!-- Inicio form -->
@@ -85,7 +88,7 @@
 		        		<option>Reunião geral de ensinamento</option>	
 		        		<option>Ensaio musical regional</option>	
 		        	</select>
-		        	<img src="imagens/add_evento.png" width="40" height="40">
+		        	<img src="imagens/add_evento.png" width="40" height="40" data-toggle="modal" data-target="#novoEvento">
 		        	Atendendo o(a):
 		        	<select>
 		        		<option>William Caetano de Souza</option>
@@ -98,15 +101,14 @@
 		        	HORA: <input type="text" name="hora" style="width:45px" maxlength="5">
 		        	ALOJAMENTO: <input type="text" name="alojamento" style="width: 160px">
 		        	CLÍNICA: <input type="text" name="clinica" style="width: 135px">
-		        	<fieldset class="mt-2">
+		        	<fieldset class="mb-2">
 		        		<legend style="font-size:0.8em;" class="font-weight-bold">ANTECEDENTES PESSOAIS</legend>
 			        		HAS <input type="checkbox" name="has" style="line-height: -4px;">
 			        		DM <input type="checkbox" name="dam">
 			        		DAC <input type="checkbox" name="dac">
 			        		CIRURGIA RECENTE <input type="checkbox" name="cr">
 			        		ALERGIA A: <input type="text" name="alergia" style="width:370px">
-			        		MEDICAMENTOS EM USO:<br>
-			        		<textarea class="w-100"></textarea>
+			        		MEDICAMENTOS EM USO:<textarea class="w-100 form-control mb-1"></textarea>
 			        		PA:<input type="text" name="pa" style="width:56px">
 			        		PULSO:<input type="text" name="pulso" style="width:56px">
 			        		TEMP:<input type="text" name="temp" style="width:56px">
@@ -115,6 +117,20 @@
 			        		ALTURA:<input type="text" name="altura" style="width:56px">
 			        		SATUR:<input type="text" name="saturacao" style="width:60px">
 		        	</fieldset>
+		        	<p class="text-center mb-1 mt-1"><span style="font-size:1em;" class="font-weight-bold">ATENDIMENTO / CONDUTA / PROCEDIMENTO / ENCAMINHAMENTO APÓS O ATENDIMENTO</span></p>
+		        	HISTÓRICO:<textarea class="form-control"></textarea>
+		        	PRESCRIÇÃO MÉDICA:<textarea class="form-control"></textarea>
+		        	ANOTAÇÃO DE ENFERMAGEM:<textarea class="form-control"></textarea>
+		        	RETORNO / ORIENTAÇÕES GERAIS:<textarea class="form-control mb-2"></textarea>
+		        	HD:<input type="text" name="hd" style="width: 275px"> 
+		        	CID:<input type="text" name="cid" style="width: 430px">
+		        	IDENTIFICAÇÃO DO PROFISSIONAL:
+		        	<select style="width: 507px" class="mt-2">
+		        		<option>Rafael barbosa</option>	
+		        		<option>Adriano Saldanha</option>
+		        		<option>Adriano Garcez</option>	
+		        		<option>João Carlos</option>	
+		        	</select>
 		        </form><!-- Fim form -->
 		      </div>
 		      <div class="modal-footer">
@@ -124,10 +140,38 @@
 		    </div>
 		  </div>
 		</div>
-		<!-- Fim modal -->
+		<!-- FIM MODAL FICHA DE ATENDIMENTO-->
 
 
-<!-- -----------AO CLICAR NO BOTÃO ATENDIMENTOS ABRIRÁ ESSE MODAL QUE É A TELA DE FICHAS DE ATENDIMENTOS(ACIMA)-------------- -->
+<!-- -----------AO CLICAR NO BOTÃO COM ID ATENDIMENTOS ABRIRÁ ESSE MODAL QUE É A TELA DE FICHAS DE ATENDIMENTOS(ACIMA)-------------- -->
+
+
+
+<!-- ---------------- AO CLICAR NA IMAGEM DO BOTÃO VERDE COM + SERÁ ABERTO A JANELA PARA CADASTRAR NOVO EVENTO(ABAIXO) ---------------------- -->
+		
+	<div class="modal fade" id="novoEvento"  role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="false">
+	  <div class="modal-dialog modal-dialog-centered" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title font-weight-bold" id="TituloModalCentralizado">CADASTRAR EVENTO</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	        <form>
+	        	<strong>EVENTO:</strong><input type="text" name="evento" style="width: 400px">	
+	        </form>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+	        <button type="submit" class="btn btn-primary">Salvar mudanças</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+<!-- ---------------- AO CLICAR NA IMAGEM DO BOTÃO VERDE COM + SERÁ ABERTO A JANELA PARA CADASTRAR NOVO EVENTO(ACIMA) ---------------------- -->
 
 
 
