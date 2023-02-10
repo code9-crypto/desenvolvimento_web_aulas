@@ -145,7 +145,7 @@ a:hover{
 
 #login .enviar:hover{
 	cursor: pointer;
-	background-color: grey;
+	background-color: #3FC5DA;
 	color: white;
 	transition: background 0.3s, color 0.3s;
 }
