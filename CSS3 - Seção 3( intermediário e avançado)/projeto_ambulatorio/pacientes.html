@@ -42,7 +42,7 @@
 				
 				<div id="area-botoes-pacientes"><!-- inicio area-botoes -->
 
-					<a href="" id="cadastrar" class="btn btn-outline-dark">
+					<a href="" id="cadastrar" class="btn btn-outline-dark" data-toggle="modal" data-target="#cadastro">
 						CADASTRAR
 					</a>
 
@@ -68,7 +68,7 @@
 
 
 
-<!-- -----------AO CLICAR NO BOTÃO COM ID ATENDIMENTOS ABRIRÁ ESSE MODAL QUE É A TELA DE FICHAS DE ATENDIMENTOS(ABAIXO)-------------- -->
+<!-- -----------(INICIO) AO CLICAR NO BOTÃO COM ID ATENDIMENTOS ABRIRÁ ESSE MODAL QUE É A TELA DE FICHAS DE ATENDIMENTOS(ABAIXO)-------------- -->
 
 		<!-- INICIO MODAL FICHA DE ATENDIMENTO -->
 		<div class="modal fade clearfix" id="atendimentos" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -143,11 +143,11 @@
 		<!-- FIM MODAL FICHA DE ATENDIMENTO-->
 
 
-<!-- -----------AO CLICAR NO BOTÃO COM ID ATENDIMENTOS ABRIRÁ ESSE MODAL QUE É A TELA DE FICHAS DE ATENDIMENTOS(ACIMA)-------------- -->
+<!-- -----------(FIM) AO CLICAR NO BOTÃO COM ID ATENDIMENTOS ABRIRÁ ESSE MODAL QUE É A TELA DE FICHAS DE ATENDIMENTOS(ACIMA)-------------- -->
 
 
 
-<!-- ---------------- AO CLICAR NA IMAGEM DO BOTÃO VERDE COM + SERÁ ABERTO A JANELA PARA CADASTRAR NOVO EVENTO(ABAIXO) ---------------------- -->
+<!-- ----------------(INICIO) AO CLICAR NA IMAGEM DO BOTÃO VERDE COM + SERÁ ABERTO A JANELA PARA CADASTRAR NOVO EVENTO(ABAIXO) ---------------------- -->
 		
 	<div class="modal fade" id="novoEvento"  role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="false">
 	  <div class="modal-dialog modal-dialog-centered" role="document">
@@ -171,7 +171,50 @@
 	  </div>
 	</div>
 
-<!-- ---------------- AO CLICAR NA IMAGEM DO BOTÃO VERDE COM + SERÁ ABERTO A JANELA PARA CADASTRAR NOVO EVENTO(ACIMA) ---------------------- -->
+<!-- ----------------(FIM) AO CLICAR NA IMAGEM DO BOTÃO VERDE COM + SERÁ ABERTO A JANELA PARA CADASTRAR NOVO EVENTO(ACIMA) ---------------------- -->
+
+
+<!-- --------------------(INICIO) AO CLICAR NO BOTÃO CADASTRAR IRÁ ABRIR ESSE MODAL(ABAIXO) ----------------------------------- -->
+<div class="modal fade" id="cadastro" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">CADASTRAR PACIENTE</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <form>
+	      	<div class="modal-body">
+	        	Nome Completo:<input type="text" name="nome" style="width: 210px">
+	        	Ministório/Cargo:<input type="text" name="mc" style="width: 210px" >
+	        	<select name="id_mc">
+		        	<option value="M">M</option>
+		        	<option value="C">C</option>
+		        	<option value="I">I</option>
+	        	</select>
+		        <input type="text" name="cod_mc" readonly style="width: 30px; text-align: center" value="1" class="mb-2">
+		        Cidade:<input type="text" name="cidade" style="width: 210px" placeholder="Por extenso ou abreviado">
+		        Estado:<input type="text" name="estado" style="width: 210px" placeholder="Por extenso ou abreviado">
+		        País:<input type="text" name="pais" style="width: 185px" class="mb-2" placeholder="Por extenso ou abreviado">
+		        Idade:<input type="text" name="idade" style="width: 90px">
+		        Sexo:
+		        <select name="sexo">
+		        	<option value="M">M</option>
+		        	<option value="F">F</option>
+		        </select>
+		        Tel/Cel:<input type="text" name="tel" style="width: 120px" placeholder="(00)00000000">
+		        Comum Congregação:<input type="text" name="comum" style="width: 193px">
+	      	</div>
+	      	<div class="modal-footer">
+		        <button type="submit" class="btn btn-primary">SALVAR</button>
+		        <button type="button" class="btn btn-secondary">LIMPAR</button>
+	      	</div>
+      </form>
+    </div>
+  </div>
+</div>
+<!-- --------------------(FIM) AO CLICAR NO BOTÃO CADASTRAR IRÁ ABRIR ESSE MODAL(ACIMA) ----------------------------------- -->
 
 
 
