@@ -33,21 +33,31 @@
 
 			</div><!-- fim topo -->
 
+			<div class="d-block col-12 text-sm-center">
+				<h3 class="text-sm-center">inicio</h3>
+			</div>
 			<div id="area-menu"><!-- inicio area-menu -->
 				
-				<div id="menu"><!-- inicio menu -->
-					<h3>inicio</h3>
-					<ul id="navegacao">
-						<li><a href="pacientes.html">Pacientes</a></li>
-						<li><a href="profissionais.html">Profissionais</a></li>
-						<li data-toggle="modal" data-target="#atendimentos">Atendimentos</li>
-					</ul>
+				<div id="menu" class="navbar navbar-expand-sm navbar-dark"><!-- inicio menu -->
+					<!-- Menu Hamburguers -->
+					<button class="navbar-toggler bg-primary" data-toggle="collapse" data-target="#nav-target">
+	        			<span class="navbar-toggler-icon"></span>
+	      			</button>
+					
+					<div class="w-100 collapse navbar-collapse" id="nav-target">
+						<ul id="navegacao" class="navbar-nav ml-auto">
+							<li class="nav-item w-100 ml-1 mr-1  mb-1 mt-1"><a href="pacientes.html">Pacientes</a></li>
+							<li class="nav-item w-100 ml-1 mr-1 mb-1 mt-1"><a href="profissionais.html">Profissionais</a></li>
+							<li class="nav-item w-100 ml-1 mr-1  mb-1 mt-1" data-toggle="modal" data-target="#atendimentos">Atendimentos</li>
+						</ul>	
+					</div>
+					
 					<div style="clear:both"></div>
 				</div><!-- fim menu -->
 
 				<div id="area-botoes" class="col-12 mr-auto ml-auto">
 
-					<a href="" id="reavaliacao" class="btn btn-outline-dark">
+					<a href="" id="reavaliacao" class="btn btn-outline-dark mb-2">
 						Fichas de atendimentos<br>
 						(REAVALIAÇÃO)
 					</a>

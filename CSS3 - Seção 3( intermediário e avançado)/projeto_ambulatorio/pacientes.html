@@ -29,14 +29,25 @@
 
 			</div><!-- fim topo -->
 
+			<div class="d-block col-12 text-sm-center">
+				<h3 class="text-sm-center">Pacientes</h3>
+			</div>
 			<div id="area-menu"><!-- inicio area-menu -->
 
-				<div id="menu"><!-- inicio menu -->
-					<ul id="navegacao">
-						<li class="realce"><a href="">Pacientes</a></li>
-						<li><a href="profissionais.html">Profissionais</a></li>
-						<li data-toggle="modal" data-target="#atendimentos">Atendimentos</li>
-					</ul>
+				<div id="menu" class="navbar navbar-expand-sm navbar-dark"><!-- inicio menu -->
+					<!-- Menu Hamburguers -->
+					<button class="navbar-toggler bg-primary" data-toggle="collapse" data-target="#nav-target">
+	        	<span class="navbar-toggler-icon"></span>
+	      	</button>
+
+					<div class="w-100 collapse navbar-collapse" id="nav-target">
+						<ul id="navegacao" class="navbar-nav ml-auto">
+							<li class="realce nav-item w-100 ml-1 mr-1  mb-1 mt-1"><a href="">Pacientes</a></li>
+							<li class="nav-item w-100 ml-1 mr-1  mb-1 mt-1"><a href="profissionais.html">Profissionais</a></li>
+							<li class="nav-item w-100 ml-1 mr-1  mb-1 mt-1" data-toggle="modal" data-target="#atendimentos">Atendimentos</li>
+						</ul>	
+					</div>
+
 					<div style="clear:both"></div>
 				</div><!-- fim menu -->
 				
@@ -59,7 +70,7 @@
 					</a>
 
 				</div><!-- fim area-botoes -->
-				<div class="inicio">
+				<div class="inicio ml-3">
 					<a href="index.html"><< Inicio</a>
 				</div>
 			</div><!-- fim area-menu -->
@@ -80,63 +91,63 @@
 	          		<span aria-hidden="true">&times;</span>
 	        	</button>
 		      </div>
-		      <div class="modal-body">
-		        <form><!-- Inicio form -->
-		        	Evento:
-		        	<select style="width:250px">
-		        		<option>Reunião geral ministerial</option>
-		        		<option>Reunião geral de ensinamento</option>	
-		        		<option>Ensaio musical regional</option>	
-		        	</select>
-		        	<img src="imagens/add_evento.png" width="40" height="40" data-toggle="modal" data-target="#novoEvento">
-		        	Atendendo o(a):
-		        	<select>
-		        		<option>William Caetano de Souza</option>
-		        		<option>Ester Juliane Caetano de Souza</option>
-		        		<option>Eli Rosa França</option>
-		        		<option>Elizeu Rosa França</option>
-		        	</select>
-		        	<img src="imagens/cadeadoVermelho.png" width="40" height="40">
-		        	DATA: <input type="date" name="data">
-		        	HORA: <input type="text" name="hora" style="width:45px" maxlength="5">
-		        	ALOJAMENTO: <input type="text" name="alojamento" style="width: 160px">
-		        	CLÍNICA: <input type="text" name="clinica" style="width: 135px">
-		        	<fieldset class="mb-2">
-		        		<legend style="font-size:0.8em;" class="font-weight-bold">ANTECEDENTES PESSOAIS</legend>
-			        		HAS <input type="checkbox" name="has" style="line-height: -4px;">
-			        		DM <input type="checkbox" name="dam">
-			        		DAC <input type="checkbox" name="dac">
-			        		CIRURGIA RECENTE <input type="checkbox" name="cr">
-			        		ALERGIA A: <input type="text" name="alergia" style="width:370px">
-			        		MEDICAMENTOS EM USO:<textarea class="w-100 form-control mb-1"></textarea>
-			        		PA:<input type="text" name="pa" style="width:56px">
-			        		PULSO:<input type="text" name="pulso" style="width:56px">
-			        		TEMP:<input type="text" name="temp" style="width:56px">
-			        		GLICEMIA:<input type="text" name="glicemia" style="width:56px">
-			        		PESO:<input type="text" name="peso" style="width:56px">
-			        		ALTURA:<input type="text" name="altura" style="width:56px">
-			        		SATUR:<input type="text" name="saturacao" style="width:60px">
-		        	</fieldset>
-		        	<p class="text-center mb-1 mt-1"><span style="font-size:1em;" class="font-weight-bold">ATENDIMENTO / CONDUTA / PROCEDIMENTO / ENCAMINHAMENTO APÓS O ATENDIMENTO</span></p>
-		        	HISTÓRICO:<textarea class="form-control"></textarea>
-		        	PRESCRIÇÃO MÉDICA:<textarea class="form-control"></textarea>
-		        	ANOTAÇÃO DE ENFERMAGEM:<textarea class="form-control"></textarea>
-		        	RETORNO / ORIENTAÇÕES GERAIS:<textarea class="form-control mb-2"></textarea>
-		        	HD:<input type="text" name="hd" style="width: 275px"> 
-		        	CID:<input type="text" name="cid" style="width: 430px">
-		        	IDENTIFICAÇÃO DO PROFISSIONAL:
-		        	<select style="width: 507px" class="mt-2">
-		        		<option>Rafael barbosa</option>	
-		        		<option>Adriano Saldanha</option>
-		        		<option>Adriano Garcez</option>	
-		        		<option>João Carlos</option>	
-		        	</select>
-		        </form><!-- Fim form -->
-		      </div>
-		      <div class="modal-footer">
-		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-		        <button type="submit" class="btn btn-primary">Salvar mudanças</button>
-		      </div>
+		      	<form><!-- Inicio form -->
+		      		<div class="modal-body">
+			        	Evento:
+			        	<select style="width:250px" name="id_mc">
+			        		<option>Reunião geral ministerial</option>
+			        		<option>Reunião geral de ensinamento</option>	
+			        		<option>Ensaio musical regional</option>	
+			        	</select>
+			        	<img src="imagens/add_evento.png" width="40" height="40" data-toggle="modal" data-target="#novoEvento">
+			        	Atendendo o(a):
+			        	<select>
+			        		<option>William Caetano de Souza</option>
+			        		<option>Ester Juliane Caetano de Souza</option>
+			        		<option>Eli Rosa França</option>
+			        		<option>Elizeu Rosa França</option>
+			        	</select>
+			        	<img src="imagens/cadeadoVermelho.png" width="40" height="40">
+			        	DATA: <input type="date" name="data">
+			        	HORA: <input type="text" name="hora" style="width:45px" maxlength="5">
+			        	ALOJAMENTO: <input type="text" name="alojamento" style="width: 160px">
+			        	CLÍNICA: <input type="text" name="clinica" style="width: 135px">
+			        	<fieldset class="mb-2">
+			        		<legend style="font-size:0.8em;" class="font-weight-bold">ANTECEDENTES PESSOAIS</legend>
+				        		HAS <input type="checkbox" name="has" style="line-height: -4px;">
+				        		DM <input type="checkbox" name="dam">
+				        		DAC <input type="checkbox" name="dac">
+				        		CIRURGIA RECENTE <input type="checkbox" name="cr">
+				        		ALERGIA A: <input type="text" name="alergia" style="width:370px">
+				        		MEDICAMENTOS EM USO:<textarea class="w-100 form-control mb-1"></textarea>
+				        		PA:<input type="text" name="pa" style="width:56px">
+				        		PULSO:<input type="text" name="pulso" style="width:56px">
+				        		TEMP:<input type="text" name="temp" style="width:56px">
+				        		GLICEMIA:<input type="text" name="glicemia" style="width:56px">
+				        		PESO:<input type="text" name="peso" style="width:56px">
+				        		ALTURA:<input type="text" name="altura" style="width:56px">
+				        		SATUR:<input type="text" name="saturacao" style="width:60px">
+			        	</fieldset>
+			        	<p class="text-center mb-1 mt-1"><span style="font-size:1em;" class="font-weight-bold">ATENDIMENTO / CONDUTA / PROCEDIMENTO / ENCAMINHAMENTO APÓS O ATENDIMENTO</span></p>
+			        	HISTÓRICO:<textarea class="form-control"></textarea>
+			        	PRESCRIÇÃO MÉDICA:<textarea class="form-control"></textarea>
+			        	ANOTAÇÃO DE ENFERMAGEM:<textarea class="form-control"></textarea>
+			        	RETORNO / ORIENTAÇÕES GERAIS:<textarea class="form-control mb-2"></textarea>
+			        	HD:<input type="text" name="hd" style="width: 275px"> 
+			        	CID:<input type="text" name="cid" style="width: 430px">
+			        	IDENTIFICAÇÃO DO PROFISSIONAL:
+			        	<select style="width: 507px" class="mt-2">
+			        		<option>Rafael barbosa</option>	
+			        		<option>Adriano Saldanha</option>
+			        		<option>Adriano Garcez</option>	
+			        		<option>João Carlos</option>	
+			        	</select>
+		      		</div>
+				      <div class="modal-footer">
+				        <button type="submit" class="btn btn-primary">SALVAR</button>
+				        <button type="button" class="btn btn-secondary">LIMPAR</button>
+				      </div>
+		      </form><!-- Fim form -->
 		    </div>
 		  </div>
 		</div>
@@ -158,15 +169,15 @@
 	          <span aria-hidden="true">&times;</span>
 	        </button>
 	      </div>
-	      <div class="modal-body">
 	        <form>
-	        	<strong>EVENTO:</strong><input type="text" name="evento" style="width: 400px">	
-	        </form>
-	      </div>
-	      <div class="modal-footer">
-	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-	        <button type="submit" class="btn btn-primary">Salvar mudanças</button>
-	      </div>
+	        	<div class="modal-body">
+	        		<strong>EVENTO:</strong><input type="text" name="evento" style="width: 400px">	
+	      		</div>
+			      <div class="modal-footer">
+			        <button type="submit" class="btn btn-primary">SALVAR</button>
+				      <button type="button" class="btn btn-secondary">LIMPAR</button>
+			      </div>
+	      </form>
 	    </div>
 	  </div>
 	</div>
