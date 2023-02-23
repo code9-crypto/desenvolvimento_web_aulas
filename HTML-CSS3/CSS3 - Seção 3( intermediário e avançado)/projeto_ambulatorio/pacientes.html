@@ -60,7 +60,7 @@
 						CADASTRAR
 					</a>
 
-					<a href="" id="atualizar" class="btn btn-outline-dark">
+					<a href="" id="atualizar" class="btn btn-outline-dark" data-toggle="modal" data-target="#atualiza">
 						ATUALIZAR
 					</a>
 
@@ -229,6 +229,46 @@
   </div>
 </div>
 <!-- --------------------(FIM) AO CLICAR NO BOTÃO CADASTRAR IRÁ ABRIR ESSE MODAL(ACIMA) ----------------------------------- -->
+
+
+<!-- --------------------(INICIO) AO CLICAR NO BOTÃO ATUALIZAR IRÁ ABRIR ESSE MODAL(ABAIXO) ----------------------------------- -->
+<div class="modal fade" id="atualiza" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">ATUALIZAR PACIENTE</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <form>
+	      	<div class="modal-body">
+	        	<div class="input-group">
+	        		Nome Completo:<input type="text" name="nome" style="width: 70%">
+	        		<div class="input-group-append">
+	        			<button type="button" onclick="alert('você clicou no botão pesquisar')" class="btn btn-primary btn-sm">Pesquisar</button>
+	        		</div>
+	        	</div>
+		        <table>
+		        	<tr>
+		        		<th>Nome</th>
+		        		<th>Ministério / Cargo</th>
+		        		<th>Endereço</th>
+		        	</tr>
+		        	<tr>
+		        		<td></td>
+		        	</tr>
+		        </table>
+	      	</div>
+	      	<div class="modal-footer">
+		        <button type="submit" class="btn btn-primary">SALVAR</button>
+		        <button type="button" class="btn btn-secondary">LIMPAR</button>
+	      	</div>
+      </form>
+    </div>
+  </div>
+</div>
+<!-- --------------------(FIM) AO CLICAR NO BOTÃO ATUALIZAR IRÁ ABRIR ESSE MODAL(ACIMA) ----------------------------------- -->
 
 
 
