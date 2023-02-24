@@ -15,6 +15,9 @@
 
 	    <!-- Bootstrap CSS -->
 	    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+	    <!-- Fontawesome(ícones customizados) -->
+	    <script src="https://kit.fontawesome.com/c2b2c19a24.js" crossorigin="anonymous"></script>
 		
 		<title>Pacientes</title>
 		<!-- Ícone da barra no topo -->
@@ -249,20 +252,95 @@
 	        			<button type="button" onclick="alert('você clicou no botão pesquisar')" class="btn btn-primary btn-sm">Pesquisar</button>
 	        		</div>
 	        	</div>
-		        <table>
-		        	<tr>
-		        		<th>Nome</th>
-		        		<th>Ministério / Cargo</th>
-		        		<th>Endereço</th>
-		        	</tr>
-		        	<tr>
-		        		<td></td>
-		        	</tr>
+		        <table class="table mt-2 table-striped">
+		        	<thead class="thead-dark">
+		        		<tr>
+			        		<th>NOME</th>
+			        	</tr>
+		        	</thead>
+			        <tbody>
+			        	<tr>
+			        		<td>
+			        			WILLIAM CAETANO DE SOUZA
+			        			<i class="fa-solid fa-rotate-left text-info float-right"></i>
+			        		</td>
+			        	</tr>
+			        	<tr>
+			        		<td>
+			        			ALEXANDRE BERGAMOTA
+			        			<i class="fa-solid fa-rotate-left text-info float-right"></i>
+			        		</td>
+			        	</tr>
+		        		<tr>
+		        			<td>
+		        				MARCO AURÉLIO
+		        				<i class="fa-solid fa-rotate-left text-info float-right"></i>
+		        			</td>
+		        		</tr>
+		        		<tr>
+		        			<td>
+		        				RAFAEL SANTANA
+		        				<i class="fa-solid fa-rotate-left text-info float-right"></i>
+		        			</td>
+		        		</tr>
+		        		<tr>
+		        			<td>
+		        				FELINTO LACERDA
+		        				<i class="fa-solid fa-rotate-left text-info float-right"></i>
+		        			</td>
+		        		</tr>
+		        		<tr>
+		        			<td>
+		        				FABIO FABIOSA
+		        				<i class="fa-solid fa-rotate-left text-info float-right"></i>
+		        			</td>
+		        		</tr>
+		        		<tr>
+		        			<td>
+		        				MARCIO OMOTO
+		        				<i class="fa-solid fa-rotate-left text-info float-right"></i>
+		        			</td>
+		        		</tr>
+		        		<tr>
+		        			<td>
+		        				TONY BRAVO
+		        				<i class="fa-solid fa-rotate-left text-info float-right"></i>
+		        			</td>
+		        		</tr>
+		        		<tr>
+		        			<td>
+		        				JARBAS BERGAMOTA
+		        				<i class="fa-solid fa-rotate-left text-info float-right"></i>
+		        			</td>
+		        		</tr>
+		        		<tr>
+		        			<td>
+		        				KATIA PEREIRA
+		        				<i class="fa-solid fa-rotate-left text-info float-right"></i>
+		        			</td>
+		        		</tr>
+			        </tbody>		        	
 		        </table>
-	      	</div>
-	      	<div class="modal-footer">
-		        <button type="submit" class="btn btn-primary">SALVAR</button>
-		        <button type="button" class="btn btn-secondary">LIMPAR</button>
+		        <nav>
+				      <ul class="pagination pagination-sm">
+				        <li class="page-item disabled">
+				          <a href="" class="page-link">
+				          	<i class="fa-solid fa-angles-left"></i>
+				        	</a>
+				        </li>
+				        <li class="page-item active">
+				          <a href="" class="page-link">1</a>
+				        </li>
+				        <li class="page-item">
+				          <a href="" class="page-link">2</a>
+				        </li>
+				        <li class="page-item">
+				          <a href="" class="page-link">
+				          	<i class="fa-solid fa-angles-right"></i>
+				          </a>
+				        </li>
+				      </ul>
+    				</nav>
 	      	</div>
       </form>
     </div>

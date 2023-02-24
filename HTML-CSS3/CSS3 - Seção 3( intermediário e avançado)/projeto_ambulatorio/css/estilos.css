@@ -299,9 +299,9 @@ select:focus{
 
 /* -------------------------------------------------------------- */
 
-/* INICIO FORMATAÇÃO MODAL FICHA DE ATENDIMENTO */
+/* INICIO FORMATAÇÃO MODAL FICHA DE ATENDIMENTO, ATUALIZA */
 
-#atendimentos{
+#atendimentos, #atualiza{
 	overflow: auto;
 }
 
