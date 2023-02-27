@@ -301,7 +301,7 @@ select:focus{
 
 /* INICIO FORMATAÇÃO MODAL FICHA DE ATENDIMENTO, ATUALIZA */
 
-#atendimentos, #atualiza{
+#atendimentos, #atualiza, #apaga, #pesquisa{
 	overflow: auto;
 }
 

@@ -67,11 +67,11 @@
 						ATUALIZAR
 					</a>
 
-					<a href="" id="pesquisar" class="btn btn-outline-dark">
+					<a href="" id="pesquisar" class="btn btn-outline-dark" data-toggle="modal" data-target="#pesquisa">
 						PESQUISAR
 					</a>
 
-					<a href="" id="apagar" class="btn btn-outline-dark">
+					<a href="" id="apagar" class="btn btn-outline-dark" data-toggle="modal" data-target="#apaga">
 						APAGAR
 					</a>
 
@@ -262,7 +262,7 @@
 			        	<tr>
 			        		<td>
 			        			WILLIAM CAETANO DE SOUZA
-			        			<i class="fa-solid fa-rotate-left text-info float-right"></i>
+			        			<i data-toggle="modal" data-target="#atualizaDado" class="fa-solid fa-rotate-left text-info float-right"></i>
 			        		</td>
 			        	</tr>
 			        	<tr>
@@ -350,11 +350,303 @@
 
 
 
+<!-- --------------------(INICIO) AO CLICAR NA IMAGEM AO LADO DO NOME IRÁ ABRIR ESSE MODAL JÁ COM OS DADOS PREENCHIDOS COM A INTENÇÃO DE ATUALIZAR ALGUMA INFORMAÇÃO(ABAIXO) ----------------------------------- -->
+<div class="modal fade" id="atualizaDado" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">DADOS DO PACIENTE</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <form>
+	      	<div class="modal-body">
+	        	Nome Completo:<input class="mb-2" type="text" name="nome" style="width: 40%">
+		        Cidade:<input type="text" name="cidade" style="width: 35%" placeholder="Por extenso ou abreviado"><br>
+		        Estado:<input type="text" name="estado" style="width: 30%" placeholder="Por extenso ou abreviado">
+		        País:<input type="text" name="pais" style="width: 40%" class="mb-2" placeholder="Por extenso ou abreviado">
+		        Idade:<input type="text" name="idade" style="width: 10.8%"><br>
+		        Tel/Cel:<input type="text" name="tel" style="width: 30%" placeholder="(00)00000000">
+		        Comum Congregação:<input type="text" name="comum" style="width: 40.5%">
+	      	</div>
+	      	<div class="modal-footer">
+		        <button type="submit" class="btn btn-primary">SALVAR</button>
+		        <button type="button" class="btn btn-secondary">LIMPAR</button>
+	      	</div>
+      </form>
+    </div>
+  </div>
+</div>
+<!-- -------------------- (INICIO) AO CLICAR NA IMAGEM AO LADO DO NOME IRÁ ABRIR ESSE MODAL JÁ COM OS DADOS PREENCHIDOS COM A INTENÇÃO DE ATUALIZAR ALGUMA INFORMAÇÃO(ABAIXO) ----------------------------------- -->
+
+
+
+
+<!-- --------------------(INICIO) AO CLICAR NO BOTÃO APAGAR IRÁ ABRIR ESSE MODAL(ABAIXO) ----------------------------------- -->
+<div class="modal fade" id="apaga" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">APAGAR PACIENTE</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <form>
+	      	<div class="modal-body">
+	        	<div class="input-group">
+	        		Nome Completo:<input type="text" name="nome" style="width: 70%">
+	        		<div class="input-group-append">
+	        			<button type="button" onclick="alert('você clicou no botão pesquisar')" class="btn btn-primary btn-sm">Pesquisar</button>
+	        		</div>
+	        	</div>
+		        <table class="table mt-2 table-striped">
+		        	<thead class="thead-dark">
+		        		<tr>
+			        		<th>NOME</th>
+			        	</tr>
+		        	</thead>
+			        <tbody>
+			        	<tr>
+			        		<td>
+			        			WILLIAM CAETANO DE SOUZA
+			        			<i onclick="confirm('Deseja realmente apagar este paciente?')" class="fa-solid fa-trash-can text-danger float-right"></i>
+			        		</td>
+			        	</tr>
+			        	<tr>
+			        		<td>
+			        			ALEXANDRE BERGAMOTA
+			        			<i class="fa-solid fa-trash-can text-danger float-right"></i>
+			        		</td>
+			        	</tr>
+		        		<tr>
+		        			<td>
+		        				MARCO AURÉLIO
+		        				<i class="fa-solid fa-trash-can text-danger float-right"></i>
+		        			</td>
+		        		</tr>
+		        		<tr>
+		        			<td>
+		        				RAFAEL SANTANA
+		        				<i class="fa-solid fa-trash-can text-danger float-right"></i>
+		        			</td>
+		        		</tr>
+		        		<tr>
+		        			<td>
+		        				FELINTO LACERDA
+		        				<i class="fa-solid fa-trash-can text-danger float-right"></i>
+		        			</td>
+		        		</tr>
+		        		<tr>
+		        			<td>
+		        				FABIO FABIOSA
+		        				<i class="fa-solid fa-trash-can text-danger float-right"></i>
+		        			</td>
+		        		</tr>
+		        		<tr>
+		        			<td>
+		        				MARCIO OMOTO
+		        				<i class="fa-solid fa-trash-can text-danger float-right"></i>
+		        			</td>
+		        		</tr>
+		        		<tr>
+		        			<td>
+		        				TONY BRAVO
+		        				<i class="fa-solid fa-trash-can text-danger float-right"></i>
+		        			</td>
+		        		</tr>
+		        		<tr>
+		        			<td>
+		        				JARBAS BERGAMOTA
+		        				<i class="fa-solid fa-trash-can text-danger float-right"></i>
+		        			</td>
+		        		</tr>
+		        		<tr>
+		        			<td>
+		        				KATIA PEREIRA
+		        				<i class="fa-solid fa-trash-can text-danger float-right"></i>
+		        			</td>
+		        		</tr>
+			        </tbody>		        	
+		        </table>
+		        <nav>
+				      <ul class="pagination pagination-sm">
+				        <li class="page-item disabled">
+				          <a href="" class="page-link">
+				          	<i class="fa-solid fa-angles-left"></i>
+				        	</a>
+				        </li>
+				        <li class="page-item active">
+				          <a href="" class="page-link">1</a>
+				        </li>
+				        <li class="page-item">
+				          <a href="" class="page-link">2</a>
+				        </li>
+				        <li class="page-item">
+				          <a href="" class="page-link">
+				          	<i class="fa-solid fa-angles-right"></i>
+				          </a>
+				        </li>
+				      </ul>
+    				</nav>
+	      	</div>
+      </form>
+    </div>
+  </div>
+</div>
+<!-- --------------------(FIM) AO CLICAR NO BOTÃO APAGAR IRÁ ABRIR ESSE MODAL(ACIMA) ----------------------------------- -->
+
+
+
+
+
+<!-- --------------------(INICIO) AO CLICAR NO BOTÃO PESQUISAR IRÁ ABRIR ESSE MODAL(ABAIXO) ----------------------------------- -->
+<div class="modal fade" id="pesquisa" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">PESQUISAR PACIENTE</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <form>
+	      	<div class="modal-body">
+	        	<div class="input-group">
+	        		Nome Completo:<input type="text" name="nome" style="width: 70%">
+	        		<div class="input-group-append">
+	        			<button type="button" onclick="alert('você clicou no botão pesquisar')" class="btn btn-primary btn-sm">Pesquisar</button>
+	        		</div>
+	        	</div>
+		        <table class="table mt-2 table-striped">
+		        	<thead class="thead-dark">
+		        		<tr>
+			        		<th>NOME</th>
+			        	</tr>
+		        	</thead>
+			        <tbody>
+			        	<tr>
+			        		<td>
+			        			WILLIAM CAETANO DE SOUZA
+			        			<i data-toggle="modal" data-target="#pesquisaDado" class="fa-solid fa-magnifying-glass text-success float-right"></i>
+			        		</td>
+			        	</tr>
+			        	<tr>
+			        		<td>
+			        			ALEXANDRE BERGAMOTA
+			        			<i class="fa-solid fa-magnifying-glass text-success float-right"></i>
+			        		</td>
+			        	</tr>
+		        		<tr>
+		        			<td>
+		        				MARCO AURÉLIO
+		        				<i class="fa-solid fa-magnifying-glass text-success float-right"></i>
+		        			</td>
+		        		</tr>
+		        		<tr>
+		        			<td>
+		        				RAFAEL SANTANA
+		        				<i class="fa-solid fa-magnifying-glass text-success float-right"></i>
+		        			</td>
+		        		</tr>
+		        		<tr>
+		        			<td>
+		        				FELINTO LACERDA
+		        				<i class="fa-solid fa-magnifying-glass text-success float-right"></i>
+		        			</td>
+		        		</tr>
+		        		<tr>
+		        			<td>
+		        				FABIO FABIOSA
+		        				<i class="fa-solid fa-magnifying-glass text-success float-right"></i>
+		        			</td>
+		        		</tr>
+		        		<tr>
+		        			<td>
+		        				MARCIO OMOTO
+		        				<i class="fa-solid fa-magnifying-glass text-success float-right"></i>
+		        			</td>
+		        		</tr>
+		        		<tr>
+		        			<td>
+		        				TONY BRAVO
+		        				<i class="fa-solid fa-magnifying-glass text-success float-right"></i>
+		        			</td>
+		        		</tr>
+		        		<tr>
+		        			<td>
+		        				JARBAS BERGAMOTA
+		        				<i class="fa-solid fa-magnifying-glass text-success float-right"></i>
+		        			</td>
+		        		</tr>
+		        		<tr>
+		        			<td>
+		        				KATIA PEREIRA
+		        				<i class="fa-solid fa-magnifying-glass text-success float-right"></i>
+		        			</td>
+		        		</tr>
+			        </tbody>		        	
+		        </table>
+		        <nav>
+				      <ul class="pagination pagination-sm">
+				        <li class="page-item disabled">
+				          <a href="" class="page-link">
+				          	<i class="fa-solid fa-angles-left"></i>
+				        	</a>
+				        </li>
+				        <li class="page-item active">
+				          <a href="" class="page-link">1</a>
+				        </li>
+				        <li class="page-item">
+				          <a href="" class="page-link">2</a>
+				        </li>
+				        <li class="page-item">
+				          <a href="" class="page-link">
+				          	<i class="fa-solid fa-angles-right"></i>
+				          </a>
+				        </li>
+				      </ul>
+    				</nav>
+	      	</div>
+      </form>
+    </div>
+  </div>
+</div>
+<!-- --------------------(FIM) AO CLICAR NO BOTÃO PESQUISAR IRÁ ABRIR ESSE MODAL(ACIMA) ----------------------------------- -->
+
+
+<!-- --------------------(INICIO) AO CLICAR NA IMAGEM AO LADO DO NOME IRÁ ABRIR ESSE MODAL JÁ COM OS DADOS PREENCHIDOS(ABAIXO) ----------------------------------- -->
+<div class="modal fade" id="pesquisaDado" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">DADOS DO PACIENTE</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <form>
+	      	<div class="modal-body">
+	        	Nome Completo:<input class="mb-2" type="text" name="nome" style="width: 40%">
+		        Cidade:<input type="text" name="cidade" style="width: 35%" placeholder="Por extenso ou abreviado"><br>
+		        Estado:<input type="text" name="estado" style="width: 30%" placeholder="Por extenso ou abreviado">
+		        País:<input type="text" name="pais" style="width: 40%" class="mb-2" placeholder="Por extenso ou abreviado">
+		        Idade:<input type="text" name="idade" style="width: 10.8%"><br>
+		        Tel/Cel:<input type="text" name="tel" style="width: 30%" placeholder="(00)00000000">
+		        Comum Congregação:<input type="text" name="comum" style="width: 40.5%">
+	      	</div>
+      </form>
+    </div>
+  </div>
+</div>
+<!-- -------------------- (INICIO) AO CLICAR NA IMAGEM AO LADO DO NOME IRÁ ABRIR ESSE MODAL JÁ COM OS DADOS PREENCHIDOS(ABAIXO) ----------------------------------- -->
+
 
 		<!-- JavaScript (Opcional) -->
-    	<!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
-	    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-	    <script src="js/bootstrap.min.js"></script>
+		<!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="js/bootstrap.min.js"></script>
 	</body>
 </html>

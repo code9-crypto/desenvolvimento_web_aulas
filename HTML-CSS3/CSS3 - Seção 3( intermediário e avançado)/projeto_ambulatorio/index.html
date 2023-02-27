@@ -53,9 +53,12 @@
 							<li class="nav-item w-100 ml-1 mr-1  mb-1 mt-1" data-toggle="modal" data-target="#atendimentos">Atendimentos</li>
 						</ul>	
 					</div>
-					
 					<div style="clear:both"></div>
+
 				</div><!-- fim menu -->
+
+				<!-- Essa é a parte que exibe a data atual -->
+				<h2 class="text-center" id="data"></h2>
 
 				<div id="area-botoes" class="col-12 mr-auto ml-auto">
 
@@ -84,6 +87,9 @@
 		    <div class="modal-content">
 		      <div class="modal-header">
 		        <h5 class="modal-title font-weight-bold" id="exampleModalLabel">FICHA DE ATENDIMENTO</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+	          		<span aria-hidden="true">&times;</span>
+	        	</button>
 		      </div>
 		      <div class="modal-body">
 		        <form><!-- Inicio form -->
@@ -136,11 +142,11 @@
 		        		<option>Adriano Garcez</option>	
 		        		<option>João Carlos</option>	
 		        	</select>
+		        	<div class="modal-footer">
+				        <button type="submit" class="btn btn-primary">SALVAR</button>
+				        <button type="button" class="btn btn-secondary">LIMPAR</button>
+				    </div>
 		        </form><!-- Fim form -->
-		      </div>
-		      <div class="modal-footer">
-		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-		        <button type="submit" class="btn btn-primary">Salvar mudanças</button>
 		      </div>
 		    </div>
 		  </div>
@@ -182,5 +188,6 @@
 	    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 	    <script src="js/bootstrap.min.js"></script>
+	    <script src="js/funcoes_index.js"></script>
 	</body>
 </html>
