@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Eventos FORMULÁRIOS</title>
+	<link rel="stylesheet" type="text/css" href="../estilo.css">
+</head>
+
+<body>
+<h1>Eventos de formulários</h1>
+
+<!-- onfocus = evento acionado quando o elemento ganha o foco -->
+<!-- <input onfocus="acao()" type="text"> -->
+
+<!-- onblur = evento acionado quando o elemento perde o foco -->
+<!-- <input onfocus="acao()" onblur="acao2()" type="text"> -->
+
+<!-- onchange = evento acionado quando há alteração no estado do elemento (usado dentro do elemento select) -->
+<select onchange="acao3()">
+	<option>-- Selecione --</option>
+	<option value="1">Primeira opção</option>
+	<option value="2">Segunda opção</option>
+</select>
+
+<script src="eventos_formularios.js"></script>
+</body>
+</html>
