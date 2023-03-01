@@ -110,6 +110,7 @@ a:hover{
 	padding-left: 40px;
 	height: 40px;
 	box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
+	border:none;
 }
 
 #login .senha{
@@ -124,6 +125,15 @@ a:hover{
 	padding-left: 40px;
 	height: 40px;
 	box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
+	border:none;
+}
+
+#login .login:focus, #login .senha:focus{
+	color: #495057;
+	background-color: #fff;
+	border-color: red;
+	outline: 0;
+	box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 
 #login .enviar{
@@ -135,15 +145,17 @@ a:hover{
 	border-radius: 15px;
 	font-size: 18px;
 	box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.5);
+	cursor: text;
+	color: black;
 }
 
-#login .enviar:hover{
+/*#login .enviar:hover{
 	cursor: pointer;
 	background-color: gray;
 	border: gray;
 	color: white;
 	transition: background 0.3s, color 0.3s;
-}
+}*/
 
 h3{
 	text-transform: uppercase;
@@ -306,3 +318,59 @@ select:focus{
 }
 
 /* FIM FORMATAÇÃO MODAL FICHA DE ATENDIMENTO */
+
+
+/* FORMATAÇÃO DE CLASSES PARA INPUTS APÓS VERIFICAÇÕES DE DADOS*/
+/*.erro{
+	width: 50%;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	padding: 8px;
+	border-radius: 15px;
+	font-size: 18px;
+	background-image: url('../imagens/icone-usuario.png');
+	background-position: 15px;
+	background-repeat: no-repeat;
+	padding-left: 40px;
+	height: 40px;
+	box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
+	border:none;
+	box-shadow: 0 0 0 0.2rem rgba(255, 0, 0, 0.5);
+}
+
+.acerto{
+	width: 50%;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	padding: 8px;
+	border-radius: 15px;
+	font-size: 18px;
+	background-image: url('../imagens/icone-usuario.png');
+	background-position: 15px;
+	background-repeat: no-repeat;
+	padding-left: 40px;
+	height: 40px;
+	box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
+	border:none;
+	box-shadow: 0 0 0 0.2rem rgba(58, 225, 71, 0.9);
+}*/
+
+.liberaBotao{
+	width: 50%;
+	margin-bottom: 10px;
+	padding: 8px;
+	text-transform: uppercase;
+	line-height: 20px;
+	border-radius: 15px;
+	font-size: 18px;
+	box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.5);
+	cursor: pointer;
+}
+
+.liberaBotao:hover{
+	cursor: pointer;
+	background-color: gray;
+	border: gray;
+	color: white;
+	transition: background 0.3s, color 0.3s;
+}

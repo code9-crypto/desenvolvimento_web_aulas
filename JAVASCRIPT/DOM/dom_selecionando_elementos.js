@@ -1,4 +1,4 @@
-/* DOM PARTE 2 - SELECIONANDO ELEMENTOS */
+/* DOM PARTE 3 - SELECIONANDO ELEMENTOS */
 
 //Recupera o dado ou informação através do id da TAG
 //console.log(document.getElementById('nome_usuario'))
