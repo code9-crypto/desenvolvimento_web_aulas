@@ -114,33 +114,33 @@
 			        		<option>Elizeu Rosa França</option>
 			        	</select>
 			        	<img src="imagens/cadeadoVermelho.png" width="40" height="40">
-			        	DATA: <input type="date" name="data">
-			        	HORA: <input type="text" name="hora" style="width:45px" maxlength="5">
-			        	ALOJAMENTO: <input type="text" name="alojamento" style="width: 160px">
-			        	CLÍNICA: <input type="text" name="clinica" style="width: 135px">
+			        	DATA: <input type="date" name="data" id="data">
+			        	HORA: <input type="text" name="hora" style="width:45px" maxlength="5" id="hora">
+			        	ALOJAMENTO: <input type="text" name="alojamento" style="width: 160px" id="alojamento">
+			        	CLÍNICA: <input type="text" name="clinica" style="width: 135px" id="clinica">
 			        	<fieldset class="mb-2">
 			        		<legend style="font-size:0.8em;" class="font-weight-bold">ANTECEDENTES PESSOAIS</legend>
-				        		HAS <input type="checkbox" name="has" style="line-height: -4px;">
-				        		DM <input type="checkbox" name="dam">
-				        		DAC <input type="checkbox" name="dac">
-				        		CIRURGIA RECENTE <input type="checkbox" name="cr">
-				        		ALERGIA A: <input type="text" name="alergia" style="width:370px">
-				        		MEDICAMENTOS EM USO:<textarea class="w-100 form-control mb-1"></textarea>
-				        		PA:<input type="text" name="pa" style="width:56px">
-				        		PULSO:<input type="text" name="pulso" style="width:56px">
-				        		TEMP:<input type="text" name="temp" style="width:56px">
-				        		GLICEMIA:<input type="text" name="glicemia" style="width:56px">
-				        		PESO:<input type="text" name="peso" style="width:56px">
-				        		ALTURA:<input type="text" name="altura" style="width:56px">
-				        		SATUR:<input type="text" name="saturacao" style="width:60px">
+				        		HAS <input type="checkbox" name="has" style="line-height: -4px;" id="has">
+				        		DM <input type="checkbox" name="dam" id="dm">
+				        		DAC <input type="checkbox" name="dac" id="dac">
+				        		CIRURGIA RECENTE <input type="checkbox" name="cr" id="cirurgia">
+				        		ALERGIA A: <input type="text" name="alergia" style="width:370px" id="alergia">
+				        		MEDICAMENTOS EM USO:<textarea class="w-100 form-control mb-1" id="medicamentos"></textarea>
+				        		PA:<input type="text" name="pa" style="width:56px" id="pa">
+				        		PULSO:<input type="text" name="pulso" style="width:56px" id="pulso">
+				        		TEMP:<input type="text" name="temp" style="width:56px" id="temp">
+				        		GLICEMIA:<input type="text" name="glicemia" style="width:56px" id="glicemia">
+				        		PESO:<input type="text" name="peso" style="width:56px" id="peso">
+				        		ALTURA:<input type="text" name="altura" style="width:56px" id="altura">
+				        		SATUR:<input type="text" name="saturacao" style="width:60px" id="saturacao">
 			        	</fieldset>
 			        	<p class="text-center mb-1 mt-1"><span style="font-size:1em;" class="font-weight-bold">ATENDIMENTO / CONDUTA / PROCEDIMENTO / ENCAMINHAMENTO APÓS O ATENDIMENTO</span></p>
-			        	HISTÓRICO:<textarea class="form-control"></textarea>
-			        	PRESCRIÇÃO MÉDICA:<textarea class="form-control"></textarea>
-			        	ANOTAÇÃO DE ENFERMAGEM:<textarea class="form-control"></textarea>
-			        	RETORNO / ORIENTAÇÕES GERAIS:<textarea class="form-control mb-2"></textarea>
-			        	HD:<input type="text" name="hd" style="width: 275px"> 
-			        	CID:<input type="text" name="cid" style="width: 430px">
+			        	HISTÓRICO:<textarea class="form-control" id="historico"></textarea>
+			        	PRESCRIÇÃO MÉDICA:<textarea class="form-control" id="prescricao"></textarea>
+			        	ANOTAÇÃO DE ENFERMAGEM:<textarea class="form-control" id="anotacao"></textarea>
+			        	RETORNO / ORIENTAÇÕES GERAIS:<textarea class="form-control mb-2" id="retorno"></textarea>
+			        	HD:<input type="text" name="hd" style="width: 275px" id="hd"> 
+			        	CID:<input type="text" name="cid" style="width: 430px" id="cid">
 			        	IDENTIFICAÇÃO DO PROFISSIONAL:
 			        	<select style="width: 507px" class="mt-2">
 			        		<option>Rafael barbosa</option>	
@@ -151,7 +151,7 @@
 		      		</div>
 				      <div class="modal-footer">
 				        <button type="submit" class="btn btn-primary">SALVAR</button>
-				        <button type="button" class="btn btn-secondary">LIMPAR</button>
+				        <button type="button" class="btn btn-secondary" onclick="limparCampos()">LIMPAR</button>
 				      </div>
 		      </form><!-- Fim form -->
 		    </div>
@@ -160,7 +160,7 @@
 		<!-- FIM MODAL FICHA DE ATENDIMENTO-->
 
 
-<!-- -----------(FIM) AO CLICAR NO BOTÃO COM ID ATENDIMENTOS ABRIRÁ ESSE MODAL QUE É A TELA DE FICHAS DE ATENDIMENTOS(ACIMA)-------------- -->
+<!-- -----------(FIM) AO CLICAR NO BOTÃO ATENDIMENTOS ABRIRÁ ESSE MODAL QUE É A TELA DE FICHAS DE ATENDIMENTOS(ACIMA)-------------- -->
 
 
 
@@ -648,5 +648,6 @@
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 		<script src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/pacientes/funcoes_pacientes.js"></script>
 	</body>
 </html>

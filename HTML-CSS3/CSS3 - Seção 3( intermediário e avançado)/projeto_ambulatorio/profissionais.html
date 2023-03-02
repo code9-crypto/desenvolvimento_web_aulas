@@ -15,6 +15,9 @@
 
 	    <!-- Bootstrap CSS -->
 	    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+	    <!-- Fontawesome(ícones customizados) -->
+	    <script src="https://kit.fontawesome.com/c2b2c19a24.js" crossorigin="anonymous"></script>
 		
 		<title>Profissionais</title>
 		<!-- Ícone da barra no topo -->
@@ -59,15 +62,15 @@
 						CADASTRAR
 					</a>
 
-					<a href="" id="atualizar" class="btn btn-outline-dark">
+					<a href="" id="atualizar" class="btn btn-outline-dark" data-toggle="modal" data-target="#atualiza">
 						ATUALIZAR
 					</a>
 
-					<a href="" id="pesquisar" class="btn btn-outline-dark">
+					<a href="" id="pesquisar" class="btn btn-outline-dark" data-toggle="modal" data-target="#pesquisa">
 						PESQUISAR
 					</a>
 
-					<a href="" id="apagar" class="btn btn-outline-dark">
+					<a href="" id="apagar" class="btn btn-outline-dark" data-toggle="modal" data-target="#apaga">
 						APAGAR
 					</a>
 
@@ -186,6 +189,7 @@
 
 <!-- ---------------- AO CLICAR NA IMAGEM DO BOTÃO VERDE COM + SERÁ ABERTO A JANELA PARA CADASTRAR NOVO EVENTO(ACIMA) ---------------------- -->
 
+
 <!-- --------------------(INICIO) AO CLICAR NO BOTÃO CADASTRAR IRÁ ABRIR ESSE MODAL DE CADASTRO DO PROFISSIONAL(ABAIXO) ----------------------------------- -->
 	<div class="modal fade" id="cadProfissional" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 	  <div class="modal-dialog modal-lg" role="document">
@@ -234,6 +238,340 @@
 <!-- --------------------(FIM) AO CLICAR NO BOTÃO CADASTRAR IRÁ ABRIR ESSE MODAL(ACIMA) ----------------------------------- -->
 
 
+
+<!-- --------------------(INICIO) AO CLICAR NO BOTÃO ATUALIZAR IRÁ ABRIR ESSE MODAL(ABAIXO) ----------------------------------- -->
+<div class="modal fade" id="atualiza" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">ATUALIZAR PROFISSIONAL</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <form>
+	      	<div class="modal-body">
+	        	<div class="input-group">
+	        		Nome Completo:<input type="text" name="nome" style="width: 70%">
+	        		<div class="input-group-append">
+	        			<button type="button" onclick="alert('você clicou no botão pesquisar')" class="btn btn-primary btn-sm">Pesquisar</button>
+	        		</div>
+	        	</div>
+		        <table class="table mt-2 table-striped">
+		        	<thead class="thead-dark">
+		        		<tr>
+			        		<th>NOME</th>
+			        	</tr>
+		        	</thead>
+			        <tbody>
+			        	<tr>
+			        		<td>
+			        			RAFAEL BARBOSA
+			        			<i data-toggle="modal" data-target="#atualizarProfissional" class="fa-solid fa-rotate-left text-info float-right"></i>
+			        		</td>
+			        	</tr>
+			        	<tr>
+			        		<td>
+			        			ADRIANO SALDANHA
+			        			<i class="fa-solid fa-rotate-left text-info float-right"></i>
+			        		</td>
+			        	</tr>
+		        		<tr>
+		        			<td>
+		        				ADRIANO GARCEZ
+		        				<i class="fa-solid fa-rotate-left text-info float-right"></i>
+		        			</td>
+		        		</tr>
+		        		<tr>
+		        			<td>
+		        				JOÃO CARLOS
+		        				<i class="fa-solid fa-rotate-left text-info float-right"></i>
+		        			</td>
+		        		</tr>
+			        </tbody>		        	
+		        </table>
+		        <nav>
+				      <ul class="pagination pagination-sm">
+				        <li class="page-item disabled">
+				          <a href="" class="page-link">
+				          	<i class="fa-solid fa-angles-left"></i>
+				        	</a>
+				        </li>
+				        <li class="page-item active">
+				          <a href="" class="page-link">1</a>
+				        </li>
+				        <li class="page-item">
+				          <a href="" class="page-link">2</a>
+				        </li>
+				        <li class="page-item">
+				          <a href="" class="page-link">
+				          	<i class="fa-solid fa-angles-right"></i>
+				          </a>
+				        </li>
+				      </ul>
+    				</nav>
+	      	</div>
+      </form>
+    </div>
+  </div>
+</div>
+<!-- --------------------(FIM) AO CLICAR NO BOTÃO ATUALIZAR IRÁ ABRIR ESSE MODAL(ACIMA) ----------------------------------- -->
+
+
+
+<!-- --------------------(INICIO) AO CLICAR NA IMAGEM AO LADO DO NOME IRÁ ABRIR ESSE MODAL JÁ COM OS DADOS PREENCHIDOS COM A INTENÇÃO DE ATUALIZAR ALGUMA INFORMAÇÃO(ABAIXO) ----------------------------------- -->
+	<div class="modal fade" id="atualizarProfissional" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="exampleModalLabel">DADOS DO PROFISSIONAL</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <form>
+		      	<div class="modal-body">
+		        	<div class="row">
+		        		<div class="col-md-6">
+		        			Nome:<input type="text" name="nome" class="w-75">		
+		        		</div>
+		        		<div class="col-md-6">
+		        			Profissão:<input type="text" name="prof" class="w-75 mb-2">		
+		        		</div>
+		        		<div class="col-md-6">
+		        			RP:<input type="text" name="rp" class="w-75 ml-4">		
+		        		</div>
+		        		<div class="col-md-6 text-center">
+		        			<select name="sigla" class="w-50">
+					        	<option value="CRM" class="text-center">CRM</option>
+					        	<option value="COREN" class="text-center">COREN</option>
+					        	<option value="CRN" class="text-center">CRN</option>
+					        	<option value="CRBM" class="text-center">CRBM</option>
+					        	<option value="CRFA" class="text-center">CRFA</option>
+					        	<option value="CRESS" class="text-center">CRESS</option>
+					        	<option value="CRF" class="text-center">CRF</option>
+					        	<option value="CREFITO" class="text-center">CREFITO</option>
+					        	<option value="TO" class="text-center">T.O</option>
+			        		</select>	
+		        		</div>
+		        	</div>
+		      	</div>
+		      	<div class="modal-footer">
+			        <button type="submit" class="btn btn-primary">SALVAR</button>
+			        <button type="button" class="btn btn-secondary">LIMPAR</button>
+		      	</div>
+	      </form>
+	    </div>
+	  </div>
+	</div>
+<!-- --------------------(FIM) AO CLICAR NO BOTÃO CADASTRAR IRÁ ABRIR ESSE MODAL(ACIMA) ----------------------------------- -->
+
+
+
+
+<!-- --------------------(INICIO) AO CLICAR NO BOTÃO APAGAR IRÁ ABRIR ESSE MODAL(ABAIXO) ----------------------------------- -->
+<div class="modal fade" id="apaga" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">APAGAR PROFISSIONAL</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <form>
+	      	<div class="modal-body">
+	        	<div class="input-group">
+	        		Nome Completo:<input type="text" name="nome" style="width: 70%">
+	        		<div class="input-group-append">
+	        			<button type="button" onclick="alert('você clicou no botão pesquisar')" class="btn btn-primary btn-sm">Pesquisar</button>
+	        		</div>
+	        	</div>
+		        <table class="table mt-2 table-striped">
+		        	<thead class="thead-dark">
+		        		<tr>
+			        		<th>NOME</th>
+			        	</tr>
+		        	</thead>
+			        <tbody>
+			        	<tr>
+			        		<td>
+			        			RAFAEL BARBOSA
+			        			<i onclick="confirm('Deseja realmente apagar este profissional?')" class="fa-solid fa-trash-can text-danger float-right"></i>
+			        		</td>
+			        	</tr>
+			        	<tr>
+			        		<td>
+			        			ADRIANO SALDANHA
+			        			<i class="fa-solid fa-trash-can text-danger float-right"></i>
+			        		</td>
+			        	</tr>
+		        		<tr>
+		        			<td>
+		        				ADRIANO GARCEZ
+		        				<i class="fa-solid fa-trash-can text-danger float-right"></i>
+		        			</td>
+		        		</tr>
+		        		<tr>
+		        			<td>
+		        				JOÃO CARLOS
+		        				<i class="fa-solid fa-trash-can text-danger float-right"></i>
+		        			</td>
+		        		</tr>
+			        </tbody>		        	
+		        </table>
+		        <nav>
+				      <ul class="pagination pagination-sm">
+				        <li class="page-item disabled">
+				          <a href="" class="page-link">
+				          	<i class="fa-solid fa-angles-left"></i>
+				        	</a>
+				        </li>
+				        <li class="page-item active">
+				          <a href="" class="page-link">1</a>
+				        </li>
+				        <li class="page-item">
+				          <a href="" class="page-link">2</a>
+				        </li>
+				        <li class="page-item">
+				          <a href="" class="page-link">
+				          	<i class="fa-solid fa-angles-right"></i>
+				          </a>
+				        </li>
+				      </ul>
+    				</nav>
+	      	</div>
+      </form>
+    </div>
+  </div>
+</div>
+<!-- --------------------(FIM) AO CLICAR NO BOTÃO APAGAR IRÁ ABRIR ESSE MODAL(ACIMA) ----------------------------------- -->
+
+
+
+
+<!-- --------------------(INICIO) AO CLICAR NO BOTÃO PESQUISAR IRÁ ABRIR ESSE MODAL(ABAIXO) ----------------------------------- -->
+<div class="modal fade" id="pesquisa" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">PESQUISAR PROFISSIONAL</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <form>
+	      	<div class="modal-body">
+	        	<div class="input-group">
+	        		Nome Completo:<input type="text" name="nome" style="width: 70%">
+	        		<div class="input-group-append">
+	        			<button type="button" onclick="alert('você clicou no botão pesquisar')" class="btn btn-primary btn-sm">Pesquisar</button>
+	        		</div>
+	        	</div>
+		        <table class="table mt-2 table-striped">
+		        	<thead class="thead-dark">
+		        		<tr>
+			        		<th>NOME</th>
+			        	</tr>
+		        	</thead>
+			        <tbody>
+			        	<tr>
+			        		<td>
+			        			RAFAEL BARBOSA
+			        			<i data-toggle="modal" data-target="#pesquisarProfissional" class="fa-solid fa-magnifying-glass text-success float-right"></i>
+			        		</td>
+			        	</tr>
+			        	<tr>
+			        		<td>
+			        			ADRIANO SALDANHA
+			        			<i class="fa-solid fa-magnifying-glass text-success float-right"></i>
+			        		</td>
+			        	</tr>
+		        		<tr>
+		        			<td>
+		        				ADRIANO GARCEZ
+		        				<i class="fa-solid fa-magnifying-glass text-success float-right"></i>
+		        			</td>
+		        		</tr>
+		        		<tr>
+		        			<td>
+		        				JOÃO CARLOS
+		        				<i class="fa-solid fa-magnifying-glass text-success float-right"></i>
+		        			</td>
+		        		</tr>
+			        </tbody>		        	
+		        </table>
+		        <nav>
+				      <ul class="pagination pagination-sm">
+				        <li class="page-item disabled">
+				          <a href="" class="page-link">
+				          	<i class="fa-solid fa-angles-left"></i>
+				        	</a>
+				        </li>
+				        <li class="page-item active">
+				          <a href="" class="page-link">1</a>
+				        </li>
+				        <li class="page-item">
+				          <a href="" class="page-link">2</a>
+				        </li>
+				        <li class="page-item">
+				          <a href="" class="page-link">
+				          	<i class="fa-solid fa-angles-right"></i>
+				          </a>
+				        </li>
+				      </ul>
+    				</nav>
+	      	</div>
+      </form>
+    </div>
+  </div>
+</div>
+<!-- --------------------(FIM) AO CLICAR NO BOTÃO PESQUISAR IRÁ ABRIR ESSE MODAL(ACIMA) ----------------------------------- -->
+
+
+
+<!-- --------------------(INICIO) AO CLICAR NA IMAGEM AO LADO DO NOME IRÁ ABRIR ESSE MODAL JÁ COM OS DADOS PREENCHIDOS COM A INTENÇÃO DE ATUALIZAR ALGUMA INFORMAÇÃO(ABAIXO) ----------------------------------- -->
+	<div class="modal fade" id="pesquisarProfissional" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="exampleModalLabel">DADOS DO PROFISSIONAL</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <form>
+		      	<div class="modal-body">
+		        	<div class="row">
+		        		<div class="col-md-6">
+		        			Nome:<input type="text" name="nome" class="w-75">		
+		        		</div>
+		        		<div class="col-md-6">
+		        			Profissão:<input type="text" name="prof" class="w-75 mb-2">		
+		        		</div>
+		        		<div class="col-md-6">
+		        			RP:<input type="text" name="rp" class="w-75 ml-4">		
+		        		</div>
+		        		<div class="col-md-6 text-center">
+		        			<select name="sigla" class="w-50">
+					        	<option value="CRM" class="text-center">CRM</option>
+					        	<option value="COREN" class="text-center">COREN</option>
+					        	<option value="CRN" class="text-center">CRN</option>
+					        	<option value="CRBM" class="text-center">CRBM</option>
+					        	<option value="CRFA" class="text-center">CRFA</option>
+					        	<option value="CRESS" class="text-center">CRESS</option>
+					        	<option value="CRF" class="text-center">CRF</option>
+					        	<option value="CREFITO" class="text-center">CREFITO</option>
+					        	<option value="TO" class="text-center">T.O</option>
+			        		</select>	
+		        		</div>
+		        	</div>
+		      	</div>
+	      </form>
+	    </div>
+	  </div>
+	</div>
+<!-- --------------------(FIM) AO CLICAR NO BOTÃO CADASTRAR IRÁ ABRIR ESSE MODAL(ACIMA) ----------------------------------- -->
 
 
 		<!-- JavaScript (Opcional) -->
