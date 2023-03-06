@@ -99,21 +99,37 @@
 		      </div>
 		      	<form><!-- Inicio form -->
 		      		<div class="modal-body">
+		      			<div class="mb-2 clearfix">
+			      			<img src="imagens/pesquisa2.png" hidden="true" id="pesquisarNome" class="float-right" style="order: 0;" onclick="pesquisarNomeDigitado()">
+			      			<input type="text" name="nomePesquisado" style="width: 350px;" class="float-right" hidden="true" id="nomePesquisado" style="order: 1">
+		      			</div>
 			        	Evento:
-			        	<select style="width:250px" name="id_mc">
-			        		<option>Reunião geral ministerial</option>
-			        		<option>Reunião geral de ensinamento</option>	
-			        		<option>Ensaio musical regional</option>	
-			        	</select>
+			        	<script>
+			        		var lista_eventos = ['Reunião geral Ministerial','Reunião geral de ensinamento','Ensaio musical regional'].sort()
+
+			        		document.write("<select id='eventos' style='width:210px'>")
+			        		for( var i = 0; i < lista_eventos.length; i++ ){
+			        			document.write('<option value="' + lista_eventos[i] + '">' + lista_eventos[i].toUpperCase() + '</option>')
+			        		}
+			        		document.write('</select>')
+		        		</script>
 			        	<img src="imagens/add_evento.png" width="40" height="40" data-toggle="modal" data-target="#novoEvento">
 			        	Atendendo o(a):
-			        	<select>
-			        		<option>William Caetano de Souza</option>
-			        		<option>Ester Juliane Caetano de Souza</option>
-			        		<option>Eli Rosa França</option>
-			        		<option>Elizeu Rosa França</option>
-			        	</select>
-			        	<img src="imagens/cadeadoVermelho.png" width="40" height="40">
+			        	<script>
+			        		//ESTA FUNÇÃO IRÁ ESCREVER A COMBOBOX NA PÁGINA ASSIM QUE ELA FOR CARREGADA
+
+			        		//este é o array que irá pegar todos os nomes dos pacientes do banco de dados
+			        		var lista_nomes = ['william caetano de souza','ester juliane caetano de souza'].sort()
+			        		
+			        		//esta é a parte que está escrevendo a comboBox na página
+									document.write("<select id='nomes'>")
+									for ( var i = 0; i < lista_nomes.length; i++ ){
+										document.write("<option value='" + lista_nomes[i] + "'>" + lista_nomes[i].toUpperCase() + "</option>")
+									}
+									document.write("</select>")
+		        		</script>
+			        	<img src="imagens/cadeadoVermelho.png" width="40" height="40" id="cadeadoVermelho" onclick="liberarCampo()">
+		        		<img src="imagens/cadeadoVerde.png" width="40" height="40" id="cadeadoVerde" onclick="esconderCampo()" hidden="true">
 			        	DATA: <input type="date" name="data" id="data">
 			        	HORA: <input type="text" name="hora" style="width:45px" maxlength="5" id="hora">
 			        	ALOJAMENTO: <input type="text" name="alojamento" style="width: 160px" id="alojamento">
@@ -142,12 +158,19 @@
 			        	HD:<input type="text" name="hd" style="width: 275px" id="hd"> 
 			        	CID:<input type="text" name="cid" style="width: 430px" id="cid">
 			        	IDENTIFICAÇÃO DO PROFISSIONAL:
-			        	<select style="width: 507px" class="mt-2">
-			        		<option>Rafael barbosa</option>	
-			        		<option>Adriano Saldanha</option>
-			        		<option>Adriano Garcez</option>	
-			        		<option>João Carlos</option>	
-			        	</select>
+			        	<script>
+			        		//ESTA FUNÇÃO IRÁ ESCREVER A COMBOBOX NA PÁGINA ASSIM QUE ELA FOR CARREGADA
+
+			        		//este é o array que irá pegar todos os nomes dos pacientes do banco de dados
+			        		var lista_profissionais = ['rafael barbosa','adriano saldanha','adriano garcez','joão carlos'].sort()
+			        		
+			        		//esta é a parte que está escrevendo a comboBox na página
+									document.write("<select id='profissionais' style='width: 507px' class='mt-2'>")
+									for ( var i = 0; i < lista_profissionais.length; i++ ){
+										document.write("<option value='" + lista_profissionais[i] + "'>" + lista_profissionais[i].toUpperCase() + "</option>")
+									}
+									document.write("</select>")
+			        	</script>
 		      		</div>
 				      <div class="modal-footer">
 				        <button type="submit" class="btn btn-primary">SALVAR</button>
