@@ -1,7 +1,7 @@
 /* PERCORRENDO E LISTANDO ITENS DE ARRAYS */
 //var lista_frutas = ['Banana','Maçã','Morango','Uva']
 
-var lista_nomes = ['william caetano de souza','ester juliane caetano de souza'].sort()
+//var lista_nomes = ['william caetano de souza','ester juliane caetano de souza'].sort()
 
 /*var y = 0
 
@@ -12,7 +12,7 @@ while(y < lista_frutas.length){
 	y++
 }*/
 
-document.write("<select id='frutas'>")
+/*document.write("<select id='frutas'>")
 for ( var i = 0; i < lista_nomes.length; i++ ){
 	document.write("<option value='" + lista_nomes[i] + "'>" + lista_nomes[i].toUpperCase() + "</option>")
 }
@@ -36,5 +36,50 @@ function escolha(){
 
 
 	document.getElementById('fruta').value = ''
+}*/
+
+var listaDados = []
+listaDados['nomes'] = ['Fabio','Rafael','Felipe']
+listaDados['enderecos'] = ['Cubatão','Santos','Peruibe']
+listaDados['idades'] = ['32','45','59']
+listaDados['sexo'] = ['Masculino','Masculino','Masculino']
+
+
+var y = 0 
+
+function carregado(){
+	document.getElementById('nome').value = listaDados['nomes'][y]
+	document.getElementById('endereco').value = listaDados['enderecos'][y]
+	document.getElementById('idade').value = listaDados['idades'][y]
+	document.getElementById('sexo').value = listaDados['sexo'][y]
 }
+
+
+function avancar(){
+	y++
+	document.getElementById('nome').value = listaDados['nomes'][y]
+	document.getElementById('endereco').value = listaDados['enderecos'][y]
+	document.getElementById('idade').value = listaDados['idades'][y]
+	document.getElementById('sexo').value = listaDados['sexo'][y]
+	if( listaDados['nomes'][y+1] === undefined ){
+		document.getElementById('btnAvancar').disabled = true
+	}else{
+		document.getElementById('btnVoltar').disabled = false
+	}
+}
+
+
+function voltar(){
+	y--
+	document.getElementById('nome').value = listaDados['nomes'][y]
+	document.getElementById('endereco').value = listaDados['enderecos'][y]
+	document.getElementById('idade').value = listaDados['idades'][y]
+	document.getElementById('sexo').value = listaDados['sexo'][y]
+	if( listaDados['nomes'][y-1] === undefined ){
+		document.getElementById('btnVoltar').disabled = true
+	}else{
+		document.getElementById('btnAvancar').disabled = false
+	}	
+}
+	
 
