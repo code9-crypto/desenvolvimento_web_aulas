@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mata mosquito</title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+<body onresize="ajustaTamanhoPalcoJogo()" onload="">
+
+	<div class="painel">
+		<div class="vidas">
+			<img id="v1" src="imagens/coracao_cheio.png">
+			<img id="v2" src="imagens/coracao_cheio.png">
+			<img id="v3" src="imagens/coracao_cheio.png">
+		</div>
+
+		<div class="cronometro">
+			tempo restante: <span id="cronometro">
+				<script>
+					document.getElementById('cronometro').innerHTML = tempo
+				</script>
+			</span>
+		</div>
+	</div>
+
+<script src="js/jogo.js"></script>
+<script type="text/javascript">
+		var tempo = 50
+		var cronometro = setInterval(function(){
+		tempo--
+		if( tempo < 0 ){
+		
+			clearInterval(cronometro)
+			clearInterval(criaMosca)
+			window.location.href = 'vitoria.html'
+
+		} else {
+		
+			//O atributo innerHTML inclui um valor entre as tags html
+			document.getElementById('cronometro').innerHTML = tempo	
+
+		}	
+	
+	} ,1000)
+
+	var criaMosca = setInterval(posicaoRandomica, criaMosquitoTempo)
+</script>
+</body>
+</html>
