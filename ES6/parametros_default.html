@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Funções</title>
+</head>
+<body>
+	<div id="output"></div>
+
+	<script type="text/javascript">
+	/* PARAMÊTROS DEFAULT */
+	//Caso na chamada da função, não haja valores definidos pelo usuário, ainda sim é possível deixar valores padrões(default) para evitar problemas na hora de renderização
+
+	//Já o fazendo dentro dos paramêtros nos paratênses da função
+
+	function contarUmHistoria(personagem = 'dog', atividade = 'brincar com a bola', dono = 'hacker') {
+		document.write(`Era ume vez um cachorro chamado ${personagem}, ele adorava ${atividade} e o nome do seu dono é ${dono}`)
+	}
+
+	contarUmHistoria(undefined,'Brincar com ossos','Bigbi')
+	//Caso queira passar os demais paramêtros, sem ser o primeiro e manter o valor padrão; na chamada da função usamos o valor undefined
+	</script>
+
+</body>
+</html>

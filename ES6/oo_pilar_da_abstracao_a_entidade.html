@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Orientação a Objetos</title>
+</head>
+<body>
+	<div id="output"></div>
+
+	<script type="text/javascript">
+	/* DA ABSTRAÇÃO A ENTIDADE */
+
+	//paradigma procedural
+
+	//cadeira
+	/*let cadeiras = []
+	cadeiras[0] = Array()
+	cadeiras[0]['qtd_pernas'] = 4
+	cadeiras[0]['giratória'] = false
+	cadeiras[0]['cor'] = 'azul'
+
+	cadeiras[1] = Array()
+	cadeiras[1]['qtd_pernas'] = 1
+	cadeiras[1]['giratória'] = true
+	cadeiras[1]['cor'] = 'vermelha'
+
+	function girarCadeira(indice){
+		if( cadeiras[indice]['giratória'] === true ){
+			console.log('girou')
+		}else{
+			console.log('cadeira não é giratória')
+		}
+
+	}
+
+	function adicionarCadeira(qtd_pernas, giratoria, cor){
+		let cadeira = []
+		cadeira['qtd_pernas'] = qtd_pernas
+		cadeira['giratória'] = giratoria
+		cadeira['cor'] = cor
+		cadeiras.push(cadeira)
+	}
+
+	adicionarCadeira(3, false, 'verde')
+	console.log(cadeiras)*/
+
+	//girarCadeira(1)
+
+	//paradigma de OO
+	/*class Cadeira{
+		constructor( qtd_pernas, giratoria, cor ){
+			this.qtd_pernas = qtd_pernas
+			this.giratoria = giratoria
+			this.cor = cor
+		}
+
+		girarCadeira(){
+			if( this.giratoria === true ){
+				console.log('girou')
+			}else{
+				console.log('cadeira não é giratória')
+			}
+		}
+	}
+
+	let cadeiras = []
+	cadeiras.push(new Cadeira(4, false, 'azul'))
+	cadeiras.push(new Cadeira(1, true, 'vermelha'))
+	console.log(cadeiras)*/
+	/*cadeira.girarCadeira()
+	cadeira2.girarCadeira()*/
+
+	class Sofa{
+		constructor( qtd_assentos, cor, reclinavel ){
+			this.qtd_assentos = qtd_assentos
+			this.cor = cor
+			this.reclinavel = reclinavel
+		}
+
+		reclicar(){
+			if( this.reclinavel === true ){
+				console.log('Sofá reclinou')
+			}else{
+				console.log('Sofá não é reclinável')
+			}
+		}
+	}
+
+	sofas = Array()
+	sofas.push(new Sofa(5, 'verde', false))
+	sofas.push(new Sofa(6, 'azul', true))
+	console.log(sofas)
+	sofas[0].reclicar()
+	sofas[1].reclicar()
+
+	</script>
+		
+
+</body>
+</html>

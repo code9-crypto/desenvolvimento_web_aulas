@@ -53,7 +53,7 @@ function posicaoRandomica(){
 	//CRIANDO ELEMENTO HTML
 	var mosca = document.createElement('img')
 	mosca.src = 'imagens/mosca.png'
-	mosca.className = tamanhoAleatorio()+ " " + ladoAleatorio()
+	mosca.className = tamanhoAleatorio() + " " + ladoAleatorio()
 	mosca.style.left = posicaoX + 'px'
 	mosca.style.top = posicaoY + 'px'
 	mosca.style.position = 'absolute'

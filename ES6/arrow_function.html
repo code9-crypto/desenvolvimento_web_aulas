@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Funções</title>
+</head>
+<body>
+	<div id="output"></div>
+
+	<script type="text/javascript">
+	/* ARROW FUNCTION */
+	//Para usar a função dentro duma variável, escrevemos o nome da variável com abre e fecha paretênses
+
+	/*let quadrado = function(x){
+		return x * x
+	}
+
+	document.write( quadrado(3) )*/
+
+
+	//Essa é a nova notação de declaração de funções em variáveis
+	//A notação acima é a mesma coisa que esta
+	/*let quadrado = (x) =>{
+		return x * x
+	}
+
+	document.write(quadrado(8))*/
+
+	//OBS.: caso na função seja passado apenas um paramêtro, podemos omitir os paratênses sem causar nenhum problema
+	
+	/*let numero = parseFloat(prompt('Digite um número'))
+	let parOuImpar = (numero) => numero % 2 === 0 ? 'par' : 'ímpar'
+	document.write(parOuImpar(numero))*/
+	
+	//OU
+
+	//O paramêtro está sem parantêses
+	let numero = parseFloat(prompt('Digite um número'))
+	let parOuImpar = numero => numero % 2 === 0 ? 'par' : 'ímpar'
+	document.write(parOuImpar(numero))
+
+	
+	</script>
+
+</body>
+</html>
