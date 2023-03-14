@@ -76,21 +76,32 @@
 			this.reclinavel = reclinavel
 		}
 
-		reclicar(){
-			if( this.reclinavel === true ){
-				console.log('Sofá reclinou')
+		reclinar(){
+			if( this.reclinavel === 'S' ){
+				return 'é reclinável'
 			}else{
-				console.log('Sofá não é reclinável')
+				return 'não é reclinável'
 			}
+		}
+
+		exibirMensagem(){
+			return `Quantidade de assentos são ${this.qtd_assentos}, a cor é ${this.cor}`
 		}
 	}
 
 	sofas = Array()
-	sofas.push(new Sofa(5, 'verde', false))
-	sofas.push(new Sofa(6, 'azul', true))
-	console.log(sofas)
-	sofas[0].reclicar()
-	sofas[1].reclicar()
+	do{
+		let qtd_assentos = prompt("Digite a quantidade de assentos do sofá")
+		let cor = prompt('Digite a cor do sofá')
+		let reclina = prompt('É reclinável (S/N)?')
+		sofas.push(new Sofa(qtd_assentos, cor, reclina))
+		var resp = prompt('Quer adicionar outro sofá? (s/n)')
+	}while(resp === 's')
+
+	//mostrando os valores da lista
+	for( let i = 0; i < sofas.length; i++ ){
+		document.write(`Especificação do sofá da posição ${i}: ${sofas[i].exibirMensagem()} e sofá ${sofas[i].reclinar()}<br>`)
+	}
 
 	</script>
 		

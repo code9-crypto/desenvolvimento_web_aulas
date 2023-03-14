@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Orientação a Objetos</title>
+</head>
+<body>
+	<div id="output"></div>
+
+	<script type="text/javascript">
+	/* ENCAPSULAMENTO */
+	class Tv{
+		constructor(){
+			/* 
+			No ES6 ainda não há suporte para campos de acesso como:
+			protected, private e public; mas para mostrar o programador que o campo é privado, acrescentamentos o undescore( _ ) na frente da variável
+			let _nomeVariavel
+			*/
+
+			this._relacaoCanais = [2,4,5,7,10]
+			this._canalAtivo = 5
+			this._volume = 5
+		}
+
+		get canalAtivo(){
+			return this._canalAtivo
+		}
+
+		set canalAtivo(canal){
+			let x = this._relacaoCanais.indexOf(canal)
+			if( x !== -1 ){
+				this._canalAtivo = canal	
+			}else{
+				alert('Este canal não existe na relação de canais')
+			}
+			
+		}
+	}
+
+	let tv = new Tv()
+	tv.canalAtivo = parseInt(prompt("Qual canal você quer?"))
+	console.log(tv.canalAtivo)
+	/* 
+		Para acessarmos os métodos getters e setters, não precisamos usar os parantênses.
+
+		Usando o get: obj.getMethod
+
+		Usando o set: obj.setMethod = valor
+	*/
+	</script>
+		
+
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Orientação a Objetos</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<div id="output"></div>
+
+	<script type="text/javascript">
+	/* HERANÇA */
+	class Animal{
+		constructor(){
+			this._cor = ''
+			this._tamanho = null
+		}
+
+		dormir(){
+			console.log('Dormir')
+		}
+
+		get Cor(){
+			return this._cor
+		}
+
+		set Cor(cor){
+			this._cor = cor
+		}
+
+		get Tamanho(){
+			return this._tamanho
+		}
+
+		set Tamanho(tamanho){
+			this._tamanho = tamanho
+		}
+	}
+
+	class Cachorro extends Animal{
+		constructor(){
+			super()
+			this._orelhas = 'Grandes e caídas'
+		}
+
+		correr(){
+			console.log('Correr')
+		}
+
+		rosnar(){
+			console.log('Rosnar')
+		}
+
+		get Orelhas(){
+			return this._orelhas
+		}
+
+		set Orelhas(orelhas){
+			this._orelhas = orelhas
+		}
+	}
+
+	class Passaro extends Animal{
+		constructor(){
+			super()
+			this._bico = 'Curto'
+		}
+
+		voar(){
+			console.log('Voar')
+		}
+
+		get Bico(){
+			return this._bico
+		}
+
+		set Bico(bico){
+			this._bico = bico
+		}
+	}
+
+	class Papagaio extends Passaro{
+		constructor(){
+			super()
+			this._sabeFalar = true
+		}
+
+		falar(){
+			console.log('Falar')
+		}
+
+		get sabeFalar(){
+			return this._sabeFalar
+		}
+
+		set sabeFalar(falar){
+			this._sabeFalar = falar
+		}
+	}
+
+
+	let cachorro = new Cachorro()
+	let passaro = new Passaro()
+	let papagaio = new Papagaio()
+
+	cachorro.Cor = 'Branco e marrom'
+	cachorro.Tamanho = 'Médio'
+	cachorro.Orelhas = 'Pequenas'
+
+	document.write(`Dados do cachorro: COR -> ${cachorro.Cor}, TAMANHO -> ${cachorro.Tamanho}, ORELHAS -> ${cachorro.Orelhas}<br>`)
+
+	passaro.Cor = 'Marrom'
+	passaro.Tamanho = 'Pequeno'
+	passaro.Bico = 'Médio'
+
+	document.write(`Dados do passaro: COR -> ${passaro.Cor}, TAMANHO -> ${passaro.Tamanho}, BICO -> ${passaro.Bico}<br>`)
+
+	papagaio.Cor = 'Verde'
+	papagaio.Tamanho = 'Médio'
+	papagaio.Bico = 'Pequeno'
+	papagaio.sabeFalar = 'Não'
+
+	document.write(`Dados do papagaio: COR -> ${papagaio.Cor}, TAMANHO -> ${papagaio.Tamanho}, BICO -> ${papagaio.Bico}, SABER FALAR -> ${papagaio.sabeFalar}`)
+
+	
+	
+
+	</script>
+		
+
+</body>
+</html>
